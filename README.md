@@ -118,8 +118,3 @@ graph TB
     style IM fill:#f3e5f5
     style VM fill:#fce4ec
 
-🚀 Quick Start
-Prerequisites
-Azure Ubuntu VM (or any Linux server)
-
-Python 3.8+
