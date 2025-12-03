@@ -1,0 +1,670 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import plotly.graph_objects as go
+import plotly.express as px
+from datetime import datetime, timedelta
+import time
+import psutil
+import os
+from sklearn.ensemble import IsolationForest
+import warnings
+warnings.filterwarnings('ignore')
+
+# Page configuration
+st.set_page_config(
+    page_title="AIOps Dashboard",
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# Custom CSS
+st.markdown("""
+<style>
+    .main-header {
+        font-size: 2.5rem;
+        color: #1E88E5;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .metric-card {
+        background-color: #f0f2f6;
+        padding: 1rem;
+        border-radius: 10px;
+        border-left: 5px solid #1E88E5;
+    }
+    .anomaly-alert {
+        background-color: #ffebee;
+        padding: 1rem;
+        border-radius: 10px;
+        border-left: 5px solid #f44336;
+    }
+</style>
+""", unsafe_allow_html=True)
+
+# Title
+st.markdown("<h1 class='main-header'>🚀 AIOps Dashboard - System Monitoring & Analytics</h1>", unsafe_allow_html=True)
+
+# Sidebar Configuration
+with st.sidebar:
+    st.image("https://img.icons8.com/color/96/000000/dashboard.png", width=80)
+    st.title("Configuration")
+    
+    # Auto-refresh toggle
+    auto_refresh = st.checkbox("🔄 Auto-refresh (10s)", value=True)
+    
+    # Alert thresholds
+    st.subheader("Alert Thresholds")
+    cpu_threshold = st.slider("CPU Threshold (%)", 50, 100, 85)
+    ram_threshold = st.slider("RAM Threshold (%)", 60, 100, 90)
+    disk_threshold = st.slider("Disk Threshold (%)", 70, 100, 80)
+    
+    # Anomaly detection sensitivity
+    st.subheader("Anomaly Detection")
+    anomaly_sensitivity = st.slider("Detection Sensitivity", 0.1, 0.5, 0.2, 0.05)
+    
+    # Log file upload
+    st.subheader("Log Management")
+    uploaded_file = st.file_uploader("Upload Log File", type=['log', 'txt', 'csv'])
+    
+    # System info
+    st.subheader("System Information")
+    st.write(f"**Hostname:** {os.uname().nodename}")
+    st.write(f"**Python:** {os.sys.version.split()[0]}")
+    st.write(f"**Uptime:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+
+# ----------------------------
+# TAB 1: BASIC DASHBOARD (10 lines)
+# ----------------------------
+tab1, tab2, tab3, tab4 = st.tabs([
+    "📊 Quick Overview", 
+    "📈 Metrics Monitor", 
+    "📄 Log Explorer", 
+    "🔍 Anomaly Detection"
+])
+
+with tab1:
+    st.header("System Health - Quick Overview")
+    
+    # Get real system metrics
+    cpu_usage = psutil.cpu_percent(interval=1)
+    ram = psutil.virtual_memory()
+    disk = psutil.disk_usage('/')
+    
+    # Line 1-3: Create columns
+    col1, col2, col3 = st.columns(3)
+    
+    # Line 4-6: Display metrics with colors
+    cpu_color = "red" if cpu_usage > cpu_threshold else "green"
+    col1.markdown(f"""
+    <div class='metric-card'>
+        <h3>CPU Usage</h3>
+        <h1 style='color: {cpu_color}'>{cpu_usage:.1f}%</h1>
+        <p>Cores: {psutil.cpu_count()}</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    ram_color = "red" if ram.percent > ram_threshold else "green"
+    col2.markdown(f"""
+    <div class='metric-card'>
+        <h3>RAM Usage</h3>
+        <h1 style='color: {ram_color}'>{ram.percent:.1f}%</h1>
+        <p>{ram.used/1e9:.1f} GB / {ram.total/1e9:.1f} GB</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    disk_color = "red" if disk.percent > disk_threshold else "green"
+    col3.markdown(f"""
+    <div class='metric-card'>
+        <h3>Disk Usage</h3>
+        <h1 style='color: {disk_color}'>{disk.percent:.1f}%</h1>
+        <p>{disk.used/1e9:.1f} GB / {disk.total/1e9:.1f} GB</p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # Line 7: Network info
+    net = psutil.net_io_counters()
+    st.metric("🌐 Network I/O", 
+              f"↑{net.bytes_sent/1e6:.1f}MB ↓{net.bytes_recv/1e6:.1f}MB")
+    
+    # Line 8: System status
+    status = "🟢 Healthy" if cpu_usage < 80 and ram.percent < 85 else "🔴 Warning"
+    st.markdown(f"**Overall Status:** {status}")
+    
+    # Line 9-10: Quick chart
+    health_data = pd.DataFrame({
+        'Metric': ['CPU', 'RAM', 'Disk'],
+        'Usage': [cpu_usage, ram.percent, disk.percent]
+    })
+    st.bar_chart(health_data.set_index('Metric'))
+
+# ----------------------------
+# TAB 2: METRICS MONITOR DASHBOARD
+# ----------------------------
+with tab2:
+    st.header("Real-time Metrics Dashboard")
+    
+    # Generate historical data (last 60 minutes)
+    end_time = datetime.now()
+    start_time = end_time - timedelta(minutes=60)
+    time_points = pd.date_range(start=start_time, end=end_time, periods=60)
+    
+    # Create sample metrics with realistic patterns
+    np.random.seed(42)
+    
+    # CPU data with trends
+    base_cpu = 40 + 20 * np.sin(np.linspace(0, 4*np.pi, 60))
+    cpu_noise = np.random.normal(0, 5, 60)
+    cpu_data = np.clip(base_cpu + cpu_noise, 10, 95)
+    
+    # RAM data
+    base_ram = 50 + 15 * np.sin(np.linspace(0, 2*np.pi, 60))
+    ram_noise = np.random.normal(0, 3, 60)
+    ram_data = np.clip(base_ram + ram_noise, 30, 90)
+    
+    # Disk data
+    disk_data = np.linspace(60, 75, 60) + np.random.normal(0, 2, 60)
+    disk_data = np.clip(disk_data, 55, 85)
+    
+    # Disk I/O
+    io_read = np.abs(np.random.lognormal(2, 0.5, 60)) * 10
+    io_write = np.abs(np.random.lognormal(1.8, 0.4, 60)) * 8
+    
+    # Create DataFrames
+    metrics_df = pd.DataFrame({
+        'timestamp': time_points,
+        'cpu_usage': cpu_data,
+        'ram_usage': ram_data,
+        'disk_usage': disk_data,
+        'io_read_mb': io_read,
+        'io_write_mb': io_write
+    })
+    
+    # Display in columns
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        # CPU Chart
+        fig_cpu = go.Figure()
+        fig_cpu.add_trace(go.Scatter(
+            x=metrics_df['timestamp'],
+            y=metrics_df['cpu_usage'],
+            mode='lines',
+            name='CPU Usage',
+            line=dict(color='#FF6B6B', width=3),
+            fill='tozeroy',
+            fillcolor='rgba(255, 107, 107, 0.1)'
+        ))
+        fig_cpu.add_hline(y=cpu_threshold, line_dash="dash", 
+                         line_color="red", annotation_text="Threshold")
+        fig_cpu.update_layout(
+            title="CPU Usage Over Time",
+            height=300,
+            xaxis_title="Time",
+            yaxis_title="CPU Usage (%)",
+            template="plotly_white"
+        )
+        st.plotly_chart(fig_cpu, use_container_width=True)
+        
+        # Disk Usage
+        fig_disk = go.Figure()
+        fig_disk.add_trace(go.Scatter(
+            x=metrics_df['timestamp'],
+            y=metrics_df['disk_usage'],
+            mode='lines',
+            name='Disk Usage',
+            line=dict(color='#4ECDC4', width=3)
+        ))
+        fig_disk.add_hline(y=disk_threshold, line_dash="dash", 
+                          line_color="red", annotation_text="Threshold")
+        fig_disk.update_layout(
+            title="Disk Usage Over Time",
+            height=300,
+            xaxis_title="Time",
+            yaxis_title="Disk Usage (%)",
+            template="plotly_white"
+        )
+        st.plotly_chart(fig_disk, use_container_width=True)
+    
+    with col2:
+        # RAM Chart
+        fig_ram = go.Figure()
+        fig_ram.add_trace(go.Scatter(
+            x=metrics_df['timestamp'],
+            y=metrics_df['ram_usage'],
+            mode='lines',
+            name='RAM Usage',
+            line=dict(color='#45B7D1', width=3),
+            fill='tozeroy',
+            fillcolor='rgba(69, 183, 209, 0.1)'
+        ))
+        fig_ram.add_hline(y=ram_threshold, line_dash="dash", 
+                         line_color="red", annotation_text="Threshold")
+        fig_ram.update_layout(
+            title="RAM Usage Over Time",
+            height=300,
+            xaxis_title="Time",
+            yaxis_title="RAM Usage (%)",
+            template="plotly_white"
+        )
+        st.plotly_chart(fig_ram, use_container_width=True)
+        
+        # Disk I/O
+        fig_io = go.Figure()
+        fig_io.add_trace(go.Scatter(
+            x=metrics_df['timestamp'],
+            y=metrics_df['io_read_mb'],
+            mode='lines',
+            name='Read MB/s',
+            line=dict(color='#96CEB4', width=3)
+        ))
+        fig_io.add_trace(go.Scatter(
+            x=metrics_df['timestamp'],
+            y=metrics_df['io_write_mb'],
+            mode='lines',
+            name='Write MB/s',
+            line=dict(color='#FFEAA7', width=3)
+        ))
+        fig_io.update_layout(
+            title="Disk I/O Operations",
+            height=300,
+            xaxis_title="Time",
+            yaxis_title="MB/s",
+            template="plotly_white"
+        )
+        st.plotly_chart(fig_io, use_container_width=True)
+    
+    # Metrics Summary
+    st.subheader("Metrics Summary")
+    summary_cols = st.columns(4)
+    with summary_cols[0]:
+        st.metric("Avg CPU", f"{metrics_df['cpu_usage'].mean():.1f}%")
+    with summary_cols[1]:
+        st.metric("Peak CPU", f"{metrics_df['cpu_usage'].max():.1f}%")
+    with summary_cols[2]:
+        st.metric("Avg RAM", f"{metrics_df['ram_usage'].mean():.1f}%")
+    with summary_cols[3]:
+        st.metric("Avg Disk I/O", f"{metrics_df['io_read_mb'].mean():.1f} MB/s")
+
+# ----------------------------
+# TAB 3: LOG EXPLORER
+# ----------------------------
+with tab3:
+    st.header("Log Explorer & Analyzer")
+    
+    # Generate sample log data
+    log_levels = ['INFO', 'WARNING', 'ERROR', 'DEBUG', 'CRITICAL']
+    services = ['web-server', 'database', 'auth-service', 'api-gateway', 'cache', 'load-balancer']
+    log_messages = [
+        'User authentication successful',
+        'Database connection established',
+        'High response time detected',
+        'Cache miss for key',
+        'Failed login attempt',
+        'Memory usage above threshold',
+        'Disk I/O latency spike',
+        'Network timeout occurred',
+        'Service restart initiated',
+        'Backup completed successfully'
+    ]
+    
+    # Create sample logs
+    sample_logs = []
+    for i in range(200):
+        timestamp = datetime.now() - timedelta(minutes=np.random.randint(0, 120))
+        level = np.random.choice(log_levels, p=[0.5, 0.2, 0.15, 0.1, 0.05])
+        service = np.random.choice(services)
+        message = f"{np.random.choice(log_messages)} - ID: {np.random.randint(1000, 9999)}"
+        ip = f"10.0.{np.random.randint(1,255)}.{np.random.randint(1,255)}"
+        
+        sample_logs.append({
+            'timestamp': timestamp,
+            'level': level,
+            'service': service,
+            'message': message,
+            'source_ip': ip,
+            'duration_ms': np.random.exponential(100) if level in ['ERROR', 'WARNING'] else np.random.exponential(50)
+        })
+    
+    logs_df = pd.DataFrame(sample_logs)
+    
+    # If file uploaded, use it
+    if uploaded_file is not None:
+        try:
+            if uploaded_file.name.endswith('.csv'):
+                uploaded_df = pd.read_csv(uploaded_file)
+            else:
+                # Parse log file
+                content = uploaded_file.read().decode('utf-8')
+                lines = content.split('\n')
+                parsed_logs = []
+                for line in lines[:500]:  # Limit to 500 lines
+                    if line.strip():
+                        parsed_logs.append({
+                            'timestamp': datetime.now(),
+                            'level': 'INFO',
+                            'service': 'uploaded',
+                            'message': line[:200],
+                            'source_ip': 'N/A',
+                            'duration_ms': 0
+                        })
+                uploaded_df = pd.DataFrame(parsed_logs)
+            
+            if not uploaded_df.empty:
+                logs_df = uploaded_df
+                st.success(f"✅ Loaded {len(logs_df)} log entries from uploaded file")
+        except Exception as e:
+            st.error(f"Error reading file: {e}")
+    
+    # Filters
+    st.subheader("🔍 Filter Logs")
+    filter_col1, filter_col2, filter_col3 = st.columns(3)
+    
+    with filter_col1:
+        selected_levels = st.multiselect(
+            "Log Level",
+            options=logs_df['level'].unique(),
+            default=['ERROR', 'WARNING']
+        )
+    
+    with filter_col2:
+        selected_services = st.multiselect(
+            "Service",
+            options=logs_df['service'].unique(),
+            default=logs_df['service'].unique()[:3]
+        )
+    
+    with filter_col3:
+        search_text = st.text_input("Search in messages", "")
+    
+    # Apply filters
+    filtered_logs = logs_df.copy()
+    
+    if selected_levels:
+        filtered_logs = filtered_logs[filtered_logs['level'].isin(selected_levels)]
+    
+    if selected_services:
+        filtered_logs = filtered_logs[filtered_logs['service'].isin(selected_services)]
+    
+    if search_text:
+        filtered_logs = filtered_logs[filtered_logs['message'].str.contains(search_text, case=False, na=False)]
+    
+    # Display logs
+    st.subheader(f"📋 Log Entries ({len(filtered_logs)} found)")
+    
+    # Color code levels
+    def color_level(level):
+        colors = {
+            'ERROR': 'red',
+            'WARNING': 'orange',
+            'CRITICAL': 'darkred',
+            'INFO': 'green',
+            'DEBUG': 'gray'
+        }
+        return colors.get(level, 'black')
+    
+    # Display logs in an interactive table
+    st.dataframe(
+        filtered_logs.style.applymap(
+            lambda x: f"color: {color_level(x)}", 
+            subset=['level']
+        ),
+        height=400,
+        use_container_width=True
+    )
+    
+    # Log Statistics
+    st.subheader("📊 Log Statistics")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        # Level distribution
+        level_counts = filtered_logs['level'].value_counts()
+        fig_levels = px.pie(
+            values=level_counts.values,
+            names=level_counts.index,
+            title="Log Level Distribution",
+            color_discrete_sequence=px.colors.sequential.RdBu
+        )
+        st.plotly_chart(fig_levels, use_container_width=True)
+    
+    with col2:
+        # Service distribution
+        service_counts = filtered_logs['service'].value_counts().head(10)
+        fig_services = px.bar(
+            x=service_counts.index,
+            y=service_counts.values,
+            title="Logs by Service (Top 10)",
+            labels={'x': 'Service', 'y': 'Count'},
+            color=service_counts.values,
+            color_continuous_scale='Viridis'
+        )
+        st.plotly_chart(fig_services, use_container_width=True)
+    
+    # Export option
+    if st.button("📥 Export Filtered Logs to CSV"):
+        csv = filtered_logs.to_csv(index=False)
+        st.download_button(
+            label="Download CSV",
+            data=csv,
+            file_name=f"logs_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv",
+            mime="text/csv"
+        )
+
+# ----------------------------
+# TAB 4: ANOMALY DETECTION
+# ----------------------------
+with tab4:
+    st.header("Anomaly Detection & Correlation Engine")
+    
+    # Generate metrics with anomalies
+    np.random.seed(123)
+    time_points = pd.date_range(end=datetime.now(), periods=100, freq='1min')
+    
+    # Create normal metrics
+    base_metrics = np.random.normal(60, 10, 100)
+    
+    # Inject anomalies at specific points
+    anomaly_points = [25, 26, 27, 50, 51, 75, 76, 77, 78]
+    for point in anomaly_points:
+        base_metrics[point] = np.random.uniform(85, 98)
+    
+    # Create anomaly labels using Isolation Forest
+    X = base_metrics.reshape(-1, 1)
+    iso_forest = IsolationForest(contamination=anomaly_sensitivity, random_state=42)
+    anomalies = iso_forest.fit_predict(X)
+    
+    # Create DataFrame
+    anomalies_df = pd.DataFrame({
+        'timestamp': time_points,
+        'metric_value': base_metrics,
+        'is_anomaly': anomalies == -1,
+        'anomaly_score': iso_forest.decision_function(X)
+    })
+    
+    # Generate correlated logs for anomalies
+    anomaly_logs = []
+    for idx, row in anomalies_df.iterrows():
+        if row['is_anomaly']:
+            log_types = [
+                ('ERROR', 'High CPU utilization detected'),
+                ('WARNING', 'System performance degradation'),
+                ('ERROR', 'Service response timeout'),
+                ('CRITICAL', 'Resource exhaustion imminent'),
+                ('WARNING', 'Unusual pattern detected')
+            ]
+            log_level, log_msg = np.random.choice(log_types, p=[0.4, 0.3, 0.15, 0.1, 0.05])
+            
+            anomaly_logs.append({
+                'timestamp': row['timestamp'],
+                'level': log_level[0],
+                'service': 'system-monitor',
+                'message': f"{log_level[1]} - Value: {row['metric_value']:.1f}%",
+                'metric_value': row['metric_value'],
+                'correlation_score': abs(row['anomaly_score'])
+            })
+    
+    anomaly_logs_df = pd.DataFrame(anomaly_logs)
+    
+    # Display in two columns
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.subheader("📈 Metrics with Detected Anomalies")
+        
+        # Create visualization
+        fig_anomalies = go.Figure()
+        
+        # Add normal points
+        normal_points = anomalies_df[~anomalies_df['is_anomaly']]
+        fig_anomalies.add_trace(go.Scatter(
+            x=normal_points['timestamp'],
+            y=normal_points['metric_value'],
+            mode='markers',
+            name='Normal',
+            marker=dict(color='blue', size=6, opacity=0.6)
+        ))
+        
+        # Add anomaly points
+        anomaly_points = anomalies_df[anomalies_df['is_anomaly']]
+        fig_anomalies.add_trace(go.Scatter(
+            x=anomaly_points['timestamp'],
+            y=anomaly_points['metric_value'],
+            mode='markers',
+            name='Anomaly',
+            marker=dict(
+                color='red',
+                size=12,
+                symbol='x',
+                line=dict(width=2, color='darkred')
+            )
+        ))
+        
+        # Add threshold line
+        fig_anomalies.add_hline(
+            y=cpu_threshold,
+            line_dash="dash",
+            line_color="orange",
+            annotation_text="Alert Threshold"
+        )
+        
+        fig_anomalies.update_layout(
+            title="CPU Metrics with Anomaly Detection",
+            height=500,
+            xaxis_title="Time",
+            yaxis_title="CPU Usage (%)",
+            template="plotly_white",
+            showlegend=True
+        )
+        
+        st.plotly_chart(fig_anomalies, use_container_width=True)
+        
+        # Anomaly statistics
+        st.markdown("### 📊 Anomaly Statistics")
+        col_stat1, col_stat2, col_stat3 = st.columns(3)
+        
+        with col_stat1:
+            st.metric("Total Anomalies", len(anomaly_points))
+        
+        with col_stat2:
+            st.metric("Anomaly Rate", f"{(len(anomaly_points)/len(anomalies_df)*100):.1f}%")
+        
+        with col_stat3:
+            avg_anomaly_val = anomaly_points['metric_value'].mean() if not anomaly_points.empty else 0
+            st.metric("Avg Anomaly Value", f"{avg_anomaly_val:.1f}%")
+    
+    with col2:
+        st.subheader("📋 Correlated Log Events")
+        
+        if not anomaly_logs_df.empty:
+            # Display logs
+            st.dataframe(
+                anomaly_logs_df.style.applymap(
+                    lambda x: 'background-color: #ffcccc' if x == 'ERROR' else 
+                             ('background-color: #ffe6cc' if x == 'WARNING' else ''),
+                    subset=['level']
+                ),
+                height=400,
+                use_container_width=True
+            )
+            
+            # Correlation analysis
+            st.markdown("### 🔗 Correlation Analysis")
+            
+            if len(anomaly_logs_df) > 0:
+                # Calculate correlation insights
+                high_corr_logs = anomaly_logs_df[anomaly_logs_df['correlation_score'] > 0.5]
+                
+                st.markdown(f"""
+                <div class='anomaly-alert'>
+                <h4>🔍 Detection Results</h4>
+                <ul>
+                    <li><strong>{len(anomaly_points)} anomalies</strong> detected in metrics</li>
+                    <li><strong>{len(anomaly_logs_df)} correlated log events</strong> found</li>
+                    <li><strong>{len(high_corr_logs)} high-correlation events</strong> (score > 0.5)</li>
+                    <li><strong>Most common issue:</strong> High CPU utilization spikes</li>
+                </ul>
+                </div>
+                """, unsafe_allow_html=True)
+                
+                # Recommendations
+                st.markdown("### 💡 Recommendations")
+                recommendations = [
+                    "Investigate services running during anomaly periods",
+                    "Check for memory leaks in application code",
+                    "Review auto-scaling configurations",
+                    "Consider adding more monitoring for disk I/O",
+                    "Set up automated alerts for similar patterns"
+                ]
+                
+                for i, rec in enumerate(recommendations, 1):
+                    st.write(f"{i}. {rec}")
+                
+                # Timeline visualization
+                st.markdown("### 🕒 Event Timeline")
+                
+                if not anomaly_logs_df.empty:
+                    timeline_data = anomaly_logs_df.copy()
+                    timeline_data['size'] = timeline_data['correlation_score'] * 30
+                    
+                    fig_timeline = px.scatter(
+                        timeline_data,
+                        x='timestamp',
+                        y='level',
+                        size='size',
+                        color='correlation_score',
+                        hover_data=['message', 'metric_value'],
+                        title="Anomaly Events Timeline",
+                        color_continuous_scale='RdYlBu_r'
+                    )
+                    fig_timeline.update_layout(height=300)
+                    st.plotly_chart(fig_timeline, use_container_width=True)
+            else:
+                st.info("No high-correlation events found. Adjust sensitivity in sidebar.")
+        else:
+            st.warning("No anomalies detected in the current dataset. Try adjusting sensitivity or check time range.")
+    
+    # Real-time simulation button
+    if st.button("🎯 Simulate Real-time Anomaly"):
+        with st.spinner("Simulating anomaly detection..."):
+            time.sleep(2)
+            st.rerun()
+
+# ----------------------------
+# FOOTER AND AUTO-REFRESH
+# ----------------------------
+st.markdown("---")
+footer_col1, footer_col2, footer_col3 = st.columns(3)
+with footer_col1:
+    st.caption(f"Last updated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+with footer_col2:
+    st.caption(f"System: {os.uname().sysname} {os.uname().release}")
+with footer_col3:
+    st.caption("AIOps Dashboard v2.0")
+
+# Auto-refresh logic
+if auto_refresh:
+    time.sleep(10)
+    st.rerun()

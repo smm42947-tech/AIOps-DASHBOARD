@@ -1,0 +1,21 @@
+timestamp,level,service,message,source_ip,attack_type,severity
+2024-01-15 10:30:00,WARNING,firewall,Suspicious port scan detected,203.0.113.42,port_scan,medium
+2024-01-15 10:30:30,CRITICAL,ids,SQL injection attempt blocked,198.51.100.23,sql_injection,high
+2024-01-15 10:31:00,ERROR,waf,XSS attack prevented,192.0.2.55,xss,high
+2024-01-15 10:31:30,INFO,firewall,Normal traffic pattern,10.0.0.1,normal,low
+2024-01-15 10:32:00,WARNING,ids,Brute force attack detected,203.0.113.89,brute_force,medium
+2024-01-15 10:32:30,CRITICAL,waf,DDoS attack in progress,198.51.100.77,ddos,critical
+2024-01-15 10:33:00,ERROR,firewall,Malware upload blocked,192.0.2.99,malware,high
+2024-01-15 10:33:30,INFO,ids,Login successful,10.0.0.100,normal,low
+2024-01-15 10:34:00,WARNING,waf,Suspicious user agent,203.0.113.12,suspicious_ua,medium
+2024-01-15 10:34:30,CRITICAL,firewall,Zero-day exploit attempt,198.51.100.45,zero_day,critical
+2024-01-15 10:35:00,ERROR,ids,Command injection detected,192.0.2.67,command_inj,high
+2024-01-15 10:35:30,INFO,waf,Request whitelisted,10.0.0.50,normal,low
+2024-01-15 10:36:00,WARNING,firewall,Geolocation anomaly,203.0.113.33,geo_anomaly,medium
+2024-01-15 10:36:30,CRITICAL,ids,Password spraying attack,198.51.100.88,password_spray,critical
+2024-01-15 10:37:00,ERROR,waf,Path traversal attempt,192.0.2.21,path_traversal,high
+2024-01-15 10:37:30,INFO,firewall,Rate limiting applied,10.0.0.75,normal,low
+2024-01-15 10:38:00,WARNING,ids,Data exfiltration attempt,203.0.113.66,data_exfil,medium
+2024-01-15 10:38:30,CRITICAL,waf,API key leaked in logs,INTERNAL,info_leak,critical
+2024-01-15 10:39:00,ERROR,firewall,Unauthorized access attempt,198.51.100.34,unauth_access,high
+2024-01-15 10:39:30,INFO,ids,Attack signature updated,10.0.0.25,normal,low

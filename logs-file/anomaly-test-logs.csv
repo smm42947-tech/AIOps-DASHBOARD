@@ -1,0 +1,1001 @@
+timestamp,level,service,message,source_ip,response_time_ms,correlation_id,is_anomaly
+2025-12-02 17:21:15.909729,DEBUG,web-server,Validating user input,10.0.1.142,374,,0
+2025-12-02 17:21:14.909729,INFO,auth-service,Email sent successfully,10.0.6.55,308,,0
+2025-12-02 17:21:15.909729,WARNING,auth-service,Connection pool at 80%,10.0.98.50,1884,,0
+2025-12-02 17:21:21.909729,WARNING,waf,SSL certificate expiring soon,10.0.111.38,922,corr_8053,0
+2025-12-02 17:21:20.909729,INFO,order-service,Cache hit,10.0.162.197,492,,0
+2025-12-02 17:21:23.909729,ERROR,load-balancer,Payment processing failed,10.0.214.10,2210,,0
+2025-12-02 17:21:23.909729,DEBUG,waf,Processing request ID 12345,10.0.141.18,416,,0
+2025-12-02 17:21:28.909729,ERROR,inventory-service,Out of memory,10.0.23.49,4269,corr_7791,0
+2025-12-02 17:21:29.909729,DEBUG,monitoring-service,Logging metric data,10.0.13.145,416,,0
+2025-12-02 17:21:29.909729,INFO,monitoring-service,Backup completed,10.0.86.203,339,,0
+2025-12-02 17:21:30.909729,INFO,ids,User login successful,10.0.111.201,54,corr_3846,0
+2025-12-02 17:21:34.909729,INFO,auth-service,Service started,10.0.59.151,85,,0
+2025-12-02 17:21:38.909729,WARNING,payment-service,Connection pool at 80%,10.0.222.62,1421,,0
+2025-12-02 17:21:37.909729,WARNING,monitoring-service,CPU temperature high,10.0.25.249,4512,corr_2730,0
+2025-12-02 17:21:38.909729,DEBUG,database,SQL query executed,10.0.91.101,135,,0
+2025-12-02 17:21:42.909729,INFO,waf,Health check passed,10.0.11.229,278,,0
+2025-12-02 17:21:44.909729,ERROR,user-service,File not found,10.0.66.111,2927,corr_2899,0
+2025-12-02 17:21:45.909729,INFO,load-balancer,Configuration loaded,10.0.55.216,217,,0
+2025-12-02 17:21:47.909729,WARNING,ids,Cache miss rate high,10.0.135.74,656,corr_9004,0
+2025-12-02 17:21:48.909729,WARNING,database,Connection pool at 80%,10.0.75.161,4780,,0
+2025-12-02 17:21:53.909729,ERROR,api-gateway,Out of memory,10.0.141.173,4346,corr_3090,0
+2025-12-02 17:21:56.909729,WARNING,auth-service,Disk space low,10.0.151.171,771,corr_9611,0
+2025-12-02 17:21:58.909729,WARNING,order-service,Disk space low,10.0.68.32,3329,,0
+2025-12-02 17:21:58.909729,CRITICAL,monitoring-service,Hardware failure,10.0.180.145,51,corr_6218,0
+2025-12-02 17:22:03.909729,INFO,waf,Email sent successfully,10.0.88.113,491,,0
+2025-12-02 17:22:03.909729,ERROR,cache,Service timeout,10.0.210.52,1989,corr_4298,0
+2025-12-02 17:22:02.909729,WARNING,notification-service,Slow query detected,10.0.218.29,3499,,0
+2025-12-02 17:22:07.909729,INFO,firewall,Cache hit,10.0.104.248,324,,0
+2025-12-02 17:22:07.909729,INFO,cache,Backup completed,10.0.59.179,266,,0
+2025-12-02 17:22:13.909729,WARNING,user-service,High response time detected,10.0.5.180,523,,0
+2025-12-02 17:22:12.909729,DEBUG,system,Cleaning temporary files,10.0.70.65,374,,1
+2025-12-02 17:22:14.909729,ERROR,inventory-service,CPU spike to 86%,10.0.13.126,1237,corr_1091,1
+2025-12-02 17:22:17.909729,WARNING,system,Slow query detected,10.0.197.108,4577,,1
+2025-12-02 17:22:20.909729,CRITICAL,system,API gateway timeout cascade,10.0.163.131,101,,1
+2025-12-02 17:22:20.909729,WARNING,system,High response time detected,10.0.27.132,578,,1
+2025-12-02 17:22:20.909729,ERROR,system,API gateway timeout cascade,10.0.121.55,2408,,1
+2025-12-02 17:22:25.909729,CRITICAL,system,CPU spike to 99%,10.0.55.64,32,,1
+2025-12-02 17:22:26.909729,ERROR,system,Distributed system partition,10.0.228.166,2240,,1
+2025-12-02 17:22:28.909729,CRITICAL,system,Cache cluster failure,10.0.143.209,48,,1
+2025-12-02 17:22:30.909729,ERROR,api-gateway,Load balancer overwhelmed,10.0.34.139,2355,,1
+2025-12-02 17:22:35.909729,ERROR,system,API gateway timeout cascade,10.0.190.13,991,,1
+2025-12-02 17:22:32.909729,INFO,order-service,Cache hit,10.0.146.153,110,,0
+2025-12-02 17:22:35.909729,WARNING,api-gateway,Network latency increased,10.0.126.184,290,,0
+2025-12-02 17:22:37.909729,WARNING,database,Connection pool at 80%,10.0.37.86,3296,corr_7416,0
+2025-12-02 17:22:41.909729,INFO,database,Configuration loaded,10.0.62.55,32,,0
+2025-12-02 17:22:40.909729,INFO,payment-service,Service started,10.0.101.147,218,,0
+2025-12-02 17:22:44.909729,ERROR,inventory-service,Service timeout,10.0.101.125,2659,,0
+2025-12-02 17:22:45.909729,INFO,user-service,Service started,10.0.121.240,204,,0
+2025-12-02 17:22:46.909729,WARNING,load-balancer,Unusual traffic pattern,10.0.20.97,2574,corr_8123,0
+2025-12-02 17:22:51.909729,INFO,order-service,Backup completed,10.0.140.89,399,,0
+2025-12-02 17:22:51.909729,CRITICAL,auth-service,Data corruption detected,10.0.123.32,121,corr_5061,0
+2025-12-02 17:22:55.909729,WARNING,notification-service,Connection pool at 80%,10.0.27.102,3749,,0
+2025-12-02 17:22:58.909729,INFO,database,Configuration loaded,10.0.31.238,329,,0
+2025-12-02 17:22:56.909729,INFO,payment-service,Email sent successfully,10.0.96.64,467,,0
+2025-12-02 17:22:59.909729,INFO,cache,Backup completed,10.0.5.109,207,,0
+2025-12-02 17:23:01.909729,INFO,web-server,Data synchronized,10.0.92.135,332,,0
+2025-12-02 17:23:02.909729,WARNING,waf,Cache miss rate high,10.0.5.112,3687,,0
+2025-12-02 17:23:06.909729,INFO,monitoring-service,Health check passed,10.0.177.238,115,,0
+2025-12-02 17:23:07.909729,INFO,database,Cache hit,10.0.19.207,48,,0
+2025-12-02 17:23:08.909729,WARNING,ids,Cache miss rate high,10.0.84.7,2547,corr_2409,0
+2025-12-02 17:23:13.909729,ERROR,database,Authentication failed,10.0.65.24,694,,0
+2025-12-02 17:23:14.909729,WARNING,user-service,CPU temperature high,10.0.33.7,1523,,0
+2025-12-02 17:23:17.909729,CRITICAL,web-server,Emergency shutdown required,10.0.62.209,50,,0
+2025-12-02 17:23:18.909729,INFO,user-service,Request processed successfully,10.0.146.151,474,corr_6442,0
+2025-12-02 17:23:18.909729,CRITICAL,monitoring-service,Complete system failure,10.0.201.221,167,,0
+2025-12-02 17:23:25.909729,WARNING,database,Cache miss rate high,10.0.173.111,4254,corr_8903,0
+2025-12-02 17:23:22.909729,DEBUG,ids,Parsing JSON response,10.0.222.231,319,,0
+2025-12-02 17:23:24.909729,INFO,monitoring-service,Request processed successfully,10.0.185.224,351,corr_6761,0
+2025-12-02 17:23:28.909729,ERROR,database,Permission denied,10.0.135.43,1324,,0
+2025-12-02 17:23:31.909729,ERROR,monitoring-service,Service timeout,10.0.103.133,3661,,0
+2025-12-02 17:23:30.909729,ERROR,monitoring-service,Authentication failed,10.0.92.116,2108,corr_8624,0
+2025-12-02 17:23:37.909729,INFO,api-gateway,Configuration loaded,10.0.26.212,103,corr_5075,0
+2025-12-02 17:23:38.909729,INFO,cache,Database connection established,10.0.230.105,389,,0
+2025-12-02 17:23:39.909729,CRITICAL,order-service,Emergency shutdown required,10.0.136.166,329,,0
+2025-12-02 17:23:43.909729,ERROR,payment-service,Out of memory,10.0.231.230,334,corr_7868,0
+2025-12-02 17:23:45.909729,INFO,monitoring-service,Service started,10.0.25.244,467,,0
+2025-12-02 17:23:44.909729,INFO,api-gateway,Health check passed,10.0.248.8,37,corr_4866,0
+2025-12-02 17:23:47.909729,ERROR,waf,Out of memory,10.0.183.83,1074,,0
+2025-12-02 17:23:48.909729,INFO,payment-service,Request processed successfully,10.0.126.26,78,,0
+2025-12-02 17:23:48.909729,WARNING,api-gateway,Network latency increased,10.0.15.121,1397,,0
+2025-12-02 17:23:54.909729,INFO,system,Backup completed,10.0.62.67,452,corr_1646,1
+2025-12-02 17:23:57.909729,ERROR,notification-service,Memory leak detected - usage at 98%,10.0.38.82,2778,corr_7585,1
+2025-12-02 17:23:59.909729,CRITICAL,firewall,Network packet loss 11%,10.0.103.186,448,corr_2444,1
+2025-12-02 17:23:56.909729,WARNING,system,Network latency increased,10.0.127.54,13,,1
+2025-12-02 17:24:01.909729,CRITICAL,system,Cache cluster failure,10.0.95.71,424,,1
+2025-12-02 17:24:05.909729,CRITICAL,cache,Disk I/O bottleneck - latency 771ms,10.0.13.38,244,corr_8172,1
+2025-12-02 17:24:06.909729,ERROR,system,Database deadlock detected,10.0.126.111,2537,corr_3642,1
+2025-12-02 17:24:08.909729,INFO,system,User login successful,10.0.14.105,297,,1
+2025-12-02 17:24:09.909729,INFO,system,Health check passed,10.0.83.183,190,,1
+2025-12-02 17:24:10.909729,WARNING,system,Slow query detected,10.0.95.37,1572,,1
+2025-12-02 17:24:12.909729,ERROR,system,Network packet loss 16%,10.0.168.47,769,corr_6893,1
+2025-12-02 17:24:13.909729,CRITICAL,monitoring-service,Emergency shutdown required,10.0.85.85,62,,0
+2025-12-02 17:24:14.909729,WARNING,inventory-service,CPU temperature high,10.0.24.241,2734,,0
+2025-12-02 17:24:21.909729,INFO,cache,Email sent successfully,10.0.243.123,213,,0
+2025-12-02 17:24:21.909729,INFO,notification-service,Configuration loaded,10.0.187.140,267,,0
+2025-12-02 17:24:22.909729,ERROR,auth-service,Permission denied,10.0.34.157,1972,corr_5898,0
+2025-12-02 17:24:25.909729,INFO,web-server,Email sent successfully,10.0.150.17,326,,0
+2025-12-02 17:24:29.909729,WARNING,load-balancer,SSL certificate expiring soon,10.0.161.5,3184,,0
+2025-12-02 17:24:29.909729,ERROR,api-gateway,Authentication failed,10.0.50.190,3863,,0
+2025-12-02 17:24:32.909729,WARNING,cache,Network latency increased,10.0.140.65,4494,,0
+2025-12-02 17:24:32.909729,INFO,user-service,Data synchronized,10.0.157.6,493,corr_3422,0
+2025-12-02 17:24:36.909729,INFO,monitoring-service,Backup completed,10.0.128.206,224,,0
+2025-12-02 17:24:37.909729,ERROR,inventory-service,File not found,10.0.197.151,1255,corr_1964,0
+2025-12-02 17:24:38.909729,ERROR,cache,Out of memory,10.0.166.244,4261,corr_9589,0
+2025-12-02 17:24:41.909729,INFO,auth-service,Configuration loaded,10.0.176.51,30,,0
+2025-12-02 17:24:40.909729,INFO,monitoring-service,Request processed successfully,10.0.47.169,362,corr_5525,0
+2025-12-02 17:24:44.909729,ERROR,load-balancer,Disk write failed,10.0.134.103,4598,,0
+2025-12-02 17:24:47.909729,INFO,order-service,Request processed successfully,10.0.192.37,10,corr_4530,0
+2025-12-02 17:24:47.909729,INFO,monitoring-service,Health check passed,10.0.140.46,439,,0
+2025-12-02 17:24:48.909729,CRITICAL,notification-service,System crash imminent,10.0.230.242,300,,0
+2025-12-02 17:24:51.909729,WARNING,waf,Disk space low,10.0.243.81,1885,,0
+2025-12-02 17:24:54.909729,INFO,user-service,Email sent successfully,10.0.9.16,144,,0
+2025-12-02 17:24:56.909729,DEBUG,database,Processing request ID 12345,10.0.33.118,293,,0
+2025-12-02 17:24:56.909729,WARNING,web-server,SSL certificate expiring soon,10.0.69.216,1546,,0
+2025-12-02 17:25:00.909729,ERROR,load-balancer,Permission denied,10.0.64.25,3398,,0
+2025-12-02 17:25:05.909729,CRITICAL,load-balancer,Critical vulnerability,10.0.65.62,352,,0
+2025-12-02 17:25:07.909729,WARNING,payment-service,Disk space low,10.0.146.213,3057,corr_9390,0
+2025-12-02 17:25:09.909729,INFO,cache,Cache hit,10.0.170.176,85,,0
+2025-12-02 17:25:09.909729,INFO,ids,Configuration loaded,10.0.91.149,116,,0
+2025-12-02 17:25:11.909729,ERROR,ids,Service timeout,10.0.129.97,1162,,0
+2025-12-02 17:25:13.909729,DEBUG,load-balancer,Generating JWT token,10.0.148.7,28,,0
+2025-12-02 17:25:13.909729,CRITICAL,notification-service,Emergency shutdown required,10.0.72.175,487,,0
+2025-12-02 17:25:16.909729,ERROR,waf,Out of memory,10.0.190.211,2546,corr_2273,0
+2025-12-02 17:25:17.909729,ERROR,load-balancer,Network unreachable,10.0.139.207,1036,,0
+2025-12-02 17:25:20.909729,WARNING,database,Disk space low,10.0.122.7,4217,,0
+2025-12-02 17:25:25.909729,DEBUG,waf,Parsing JSON response,10.0.14.17,245,corr_1423,0
+2025-12-02 17:25:25.909729,ERROR,inventory-service,Authentication failed,10.0.16.146,1622,,0
+2025-12-02 17:25:26.909729,WARNING,user-service,Network latency increased,10.0.48.62,212,,0
+2025-12-02 17:25:27.909729,INFO,web-server,Health check passed,10.0.90.34,435,,0
+2025-12-02 17:25:29.909729,WARNING,user-service,Disk space low,10.0.186.178,2204,,0
+2025-12-02 17:25:30.909729,ERROR,api-gateway,Network unreachable,10.0.29.5,2629,,0
+2025-12-02 17:25:32.909729,INFO,auth-service,User login successful,10.0.28.4,479,,0
+2025-12-02 17:25:35.909729,INFO,load-balancer,Cache hit,10.0.57.241,483,,0
+2025-12-02 17:25:37.909729,INFO,api-gateway,Service started,10.0.109.215,386,,0
+2025-12-02 17:25:39.909729,ERROR,web-server,Service timeout,10.0.167.135,1969,corr_6605,0
+2025-12-02 17:25:42.909729,INFO,inventory-service,Service started,10.0.236.51,323,corr_7187,0
+2025-12-02 17:25:46.909729,INFO,ids,Cache hit,10.0.225.254,104,,0
+2025-12-02 17:25:46.909729,WARNING,cache,Cache miss rate high,10.0.79.65,1027,,0
+2025-12-02 17:25:50.909729,INFO,firewall,Service started,10.0.26.154,74,,0
+2025-12-02 17:25:50.909729,INFO,inventory-service,Email sent successfully,10.0.78.153,413,corr_7583,0
+2025-12-02 17:25:55.909729,INFO,user-service,User login successful,10.0.147.112,409,,0
+2025-12-02 17:25:57.909729,INFO,waf,User login successful,10.0.130.81,265,,0
+2025-12-02 17:25:57.909729,ERROR,monitoring-service,Payment processing failed,10.0.79.181,1979,,0
+2025-12-02 17:26:01.909729,WARNING,api-gateway,Unusual traffic pattern,10.0.223.50,4494,,0
+2025-12-02 17:26:01.909729,INFO,notification-service,User login successful,10.0.155.37,337,,0
+2025-12-02 17:26:02.909729,INFO,payment-service,Service started,10.0.149.230,332,,0
+2025-12-02 17:26:03.909729,WARNING,ids,High response time detected,10.0.104.229,1268,,0
+2025-12-02 17:26:06.909729,ERROR,database,Database connection lost,10.0.143.129,2296,corr_9465,0
+2025-12-02 17:26:08.909729,ERROR,payment-service,Network unreachable,10.0.121.165,4479,corr_9312,0
+2025-12-02 17:26:08.909729,INFO,api-gateway,Configuration loaded,10.0.15.251,26,corr_3708,0
+2025-12-02 17:26:11.909729,INFO,notification-service,Cache hit,10.0.210.179,18,,1
+2025-12-02 17:26:16.909729,ERROR,waf,Distributed system partition,10.0.17.137,1997,corr_5486,1
+2025-12-02 17:26:16.909729,DEBUG,system,Cache key: user_profile_789,10.0.38.9,428,,1
+2025-12-02 17:26:21.909729,WARNING,system,Memory usage above threshold,10.0.98.144,1427,,1
+2025-12-02 17:26:22.909729,INFO,system,Email sent successfully,10.0.22.147,149,corr_1747,1
+2025-12-02 17:26:25.909729,CRITICAL,system,Distributed system partition,10.0.56.181,160,,1
+2025-12-02 17:26:27.909729,WARNING,notification-service,Unusual traffic pattern,10.0.206.237,1114,corr_8131,1
+2025-12-02 17:26:28.909729,CRITICAL,system,CPU spike to 87%,10.0.98.29,189,,1
+2025-12-02 17:26:27.909729,CRITICAL,system,Database deadlock detected,10.0.173.204,165,corr_4204,1
+2025-12-02 17:26:29.909729,CRITICAL,system,API gateway timeout cascade,10.0.74.27,334,corr_6437,1
+2025-12-02 17:26:31.909729,WARNING,system,High response time detected,10.0.40.134,4348,,1
+2025-12-02 17:26:35.909729,INFO,notification-service,Service started,10.0.91.169,374,,0
+2025-12-02 17:26:34.909729,INFO,web-server,Backup completed,10.0.47.188,343,,0
+2025-12-02 17:26:38.909729,WARNING,inventory-service,Connection pool at 80%,10.0.70.153,1755,,0
+2025-12-02 17:26:41.909729,ERROR,web-server,Network unreachable,10.0.50.228,1434,corr_2451,0
+2025-12-02 17:26:44.909729,ERROR,inventory-service,File not found,10.0.118.205,2240,corr_9387,0
+2025-12-02 17:26:45.909729,WARNING,load-balancer,Disk space low,10.0.179.118,4852,corr_5876,0
+2025-12-02 17:26:44.909729,WARNING,notification-service,SSL certificate expiring soon,10.0.132.241,381,,0
+2025-12-02 17:26:46.909729,WARNING,inventory-service,Memory usage above threshold,10.0.6.168,1469,corr_9738,0
+2025-12-02 17:26:51.909729,WARNING,payment-service,Slow query detected,10.0.252.182,3507,,0
+2025-12-02 17:26:54.909729,WARNING,notification-service,CPU temperature high,10.0.27.131,4206,corr_8268,0
+2025-12-02 17:26:55.909729,ERROR,monitoring-service,Permission denied,10.0.233.221,883,,0
+2025-12-02 17:26:58.909729,WARNING,api-gateway,Disk space low,10.0.199.157,4203,,0
+2025-12-02 17:26:59.909729,INFO,cache,Health check passed,10.0.68.181,468,,0
+2025-12-02 17:27:03.909729,WARNING,database,CPU temperature high,10.0.215.236,4644,corr_9009,0
+2025-12-02 17:27:01.909729,ERROR,database,Out of memory,10.0.91.209,4521,,0
+2025-12-02 17:27:03.909729,INFO,user-service,Health check passed,10.0.168.181,486,,0
+2025-12-02 17:27:05.909729,INFO,web-server,Database connection established,10.0.243.193,446,,0
+2025-12-02 17:27:09.909729,WARNING,auth-service,High response time detected,10.0.218.251,1502,,0
+2025-12-02 17:27:12.909729,WARNING,auth-service,Slow query detected,10.0.196.46,3413,,0
+2025-12-02 17:27:10.909729,CRITICAL,load-balancer,Data loss detected,10.0.200.236,79,,0
+2025-12-02 17:27:14.909729,INFO,firewall,Service started,10.0.152.217,330,,0
+2025-12-02 17:27:15.909729,INFO,ids,Cache hit,10.0.36.223,296,,0
+2025-12-02 17:27:21.909729,ERROR,web-server,Payment processing failed,10.0.40.54,679,,0
+2025-12-02 17:27:18.909729,WARNING,database,Slow query detected,10.0.29.13,3439,corr_5695,0
+2025-12-02 17:27:21.909729,CRITICAL,ids,Critical vulnerability,10.0.199.249,462,,0
+2025-12-02 17:27:25.909729,INFO,ids,Cache hit,10.0.99.247,429,,0
+2025-12-02 17:27:29.909729,WARNING,cache,Unusual traffic pattern,10.0.100.235,3904,corr_7449,0
+2025-12-02 17:27:26.909729,WARNING,database,Slow query detected,10.0.218.196,2879,corr_6108,0
+2025-12-02 17:27:28.909729,WARNING,inventory-service,SSL certificate expiring soon,10.0.23.135,77,,0
+2025-12-02 17:27:35.909729,INFO,api-gateway,User login successful,10.0.43.21,48,,0
+2025-12-02 17:27:36.909729,WARNING,database,Connection pool at 80%,10.0.122.136,4303,corr_6071,0
+2025-12-02 17:27:34.909729,WARNING,payment-service,Disk space low,10.0.51.48,3282,corr_6052,0
+2025-12-02 17:27:38.909729,INFO,auth-service,User login successful,10.0.75.44,23,,0
+2025-12-02 17:27:39.909729,INFO,ids,Data synchronized,10.0.137.106,12,,0
+2025-12-02 17:27:45.909729,WARNING,order-service,Connection pool at 80%,10.0.133.153,4889,corr_8193,0
+2025-12-02 17:27:43.909729,INFO,cache,User login successful,10.0.15.193,45,,0
+2025-12-02 17:27:49.909729,INFO,cache,Backup completed,10.0.7.5,194,,0
+2025-12-02 17:27:47.909729,WARNING,web-server,Connection pool at 80%,10.0.147.29,1980,corr_4237,0
+2025-12-02 17:27:51.909729,WARNING,ids,SSL certificate expiring soon,10.0.69.236,4828,,0
+2025-12-02 17:27:54.909729,WARNING,payment-service,Memory usage above threshold,10.0.212.11,545,,0
+2025-12-02 17:27:54.909729,ERROR,web-server,Network unreachable,10.0.136.254,729,,0
+2025-12-02 17:27:56.909729,INFO,notification-service,Configuration loaded,10.0.231.195,288,corr_3574,0
+2025-12-02 17:28:01.909729,WARNING,firewall,High response time detected,10.0.252.51,885,,0
+2025-12-02 17:28:00.909729,WARNING,database,High response time detected,10.0.118.101,1278,,0
+2025-12-02 17:28:02.909729,INFO,cache,Backup completed,10.0.164.178,435,,0
+2025-12-02 17:28:07.909729,INFO,ids,Configuration loaded,10.0.53.76,346,,0
+2025-12-02 17:28:07.909729,INFO,api-gateway,Configuration loaded,10.0.235.131,126,,0
+2025-12-02 17:28:07.909729,ERROR,payment-service,Authentication failed,10.0.252.202,4859,corr_7831,0
+2025-12-02 17:28:08.909729,INFO,waf,Request processed successfully,10.0.236.103,433,,0
+2025-12-02 17:28:11.909729,CRITICAL,inventory-service,Hardware failure,10.0.143.196,218,corr_3144,0
+2025-12-02 17:28:13.909729,ERROR,web-server,Service timeout,10.0.171.94,242,,0
+2025-12-02 17:28:18.909729,WARNING,web-server,Network latency increased,10.0.211.86,1555,,0
+2025-12-02 17:28:18.909729,INFO,user-service,Cache hit,10.0.49.173,176,,0
+2025-12-02 17:28:22.909729,CRITICAL,auth-service,Critical vulnerability,10.0.249.19,482,corr_7958,0
+2025-12-02 17:28:21.909729,INFO,monitoring-service,Health check passed,10.0.253.221,387,corr_2450,0
+2025-12-02 17:28:24.909729,WARNING,firewall,Cache miss rate high,10.0.197.26,1739,,0
+2025-12-02 17:28:26.909729,DEBUG,api-gateway,API call to external service,10.0.99.75,83,corr_5216,0
+2025-12-02 17:28:26.909729,INFO,load-balancer,Configuration loaded,10.0.164.39,66,,0
+2025-12-02 17:28:30.909729,DEBUG,database,Processing request ID 12345,10.0.150.78,29,,0
+2025-12-02 17:28:33.909729,ERROR,system,Network packet loss 22%,10.0.125.191,1990,,1
+2025-12-02 17:28:34.909729,CRITICAL,auth-service,Memory leak detected - usage at 94%,10.0.6.195,21,corr_7870,1
+2025-12-02 17:28:35.909729,WARNING,system,Unusual traffic pattern,10.0.239.26,1725,,1
+2025-12-02 17:28:40.909729,ERROR,system,Disk I/O bottleneck - latency 1434ms,10.0.58.127,1105,,1
+2025-12-02 17:28:40.909729,CRITICAL,system,CPU spike to 96%,10.0.130.136,180,,1
+2025-12-02 17:28:42.909729,CRITICAL,database,Network packet loss 28%,10.0.98.44,87,,1
+2025-12-02 17:28:44.909729,INFO,system,Request processed successfully,10.0.70.57,115,,1
+2025-12-02 17:28:48.909729,INFO,load-balancer,User login successful,10.0.209.69,471,,1
+2025-12-02 17:28:49.909729,DEBUG,monitoring-service,Parsing JSON response,10.0.109.154,361,,1
+2025-12-02 17:28:48.909729,INFO,system,Email sent successfully,10.0.239.199,233,,1
+2025-12-02 17:28:55.909729,CRITICAL,system,Disk I/O bottleneck - latency 532ms,10.0.125.224,443,,1
+2025-12-02 17:28:54.909729,ERROR,database,Authentication failed,10.0.139.32,1662,corr_4869,0
+2025-12-02 17:28:55.909729,INFO,api-gateway,Data synchronized,10.0.37.215,18,,0
+2025-12-02 17:29:01.909729,INFO,inventory-service,Database connection established,10.0.215.83,378,,0
+2025-12-02 17:29:00.909729,INFO,payment-service,Email sent successfully,10.0.46.238,215,,0
+2025-12-02 17:29:00.909729,DEBUG,inventory-service,Validating user input,10.0.212.39,468,corr_6841,0
+2025-12-02 17:29:04.909729,ERROR,notification-service,Authentication failed,10.0.86.91,1807,,0
+2025-12-02 17:29:04.909729,INFO,auth-service,Service started,10.0.55.199,345,,0
+2025-12-02 17:29:08.909729,WARNING,inventory-service,SSL certificate expiring soon,10.0.221.11,1014,,0
+2025-12-02 17:29:13.909729,INFO,web-server,User login successful,10.0.126.15,363,,0
+2025-12-02 17:29:12.909729,CRITICAL,waf,Emergency shutdown required,10.0.80.163,279,corr_9007,0
+2025-12-02 17:29:16.909729,INFO,user-service,Email sent successfully,10.0.236.249,322,,0
+2025-12-02 17:29:14.909729,WARNING,database,Disk space low,10.0.171.127,375,,0
+2025-12-02 17:29:16.909729,WARNING,web-server,Unusual traffic pattern,10.0.48.84,3848,,0
+2025-12-02 17:29:19.909729,INFO,api-gateway,Email sent successfully,10.0.250.23,359,,0
+2025-12-02 17:29:24.909729,INFO,api-gateway,User login successful,10.0.39.99,383,corr_9883,0
+2025-12-02 17:29:25.909729,WARNING,web-server,CPU temperature high,10.0.248.229,841,,0
+2025-12-02 17:29:26.909729,WARNING,payment-service,Disk space low,10.0.116.25,1230,,0
+2025-12-02 17:29:28.909729,CRITICAL,web-server,Data corruption detected,10.0.234.242,73,corr_6843,0
+2025-12-02 17:29:31.909729,INFO,user-service,Data synchronized,10.0.230.154,432,corr_8276,0
+2025-12-02 17:29:30.909729,CRITICAL,load-balancer,Data corruption detected,10.0.197.209,372,,0
+2025-12-02 17:29:33.909729,INFO,waf,Service started,10.0.129.99,442,,0
+2025-12-02 17:29:36.909729,WARNING,firewall,Slow query detected,10.0.68.115,3603,,0
+2025-12-02 17:29:41.909729,ERROR,load-balancer,API rate limit exceeded,10.0.142.141,2377,,0
+2025-12-02 17:29:41.909729,ERROR,api-gateway,Disk write failed,10.0.199.51,1825,,0
+2025-12-02 17:29:43.909729,WARNING,auth-service,CPU temperature high,10.0.78.117,3941,,0
+2025-12-02 17:29:44.909729,WARNING,api-gateway,Unusual traffic pattern,10.0.178.122,3898,corr_7743,0
+2025-12-02 17:29:45.909729,ERROR,auth-service,Permission denied,10.0.197.44,1447,,0
+2025-12-02 17:29:47.909729,WARNING,ids,Memory usage above threshold,10.0.54.151,3429,,0
+2025-12-02 17:29:51.909729,INFO,web-server,Email sent successfully,10.0.161.245,306,,0
+2025-12-02 17:29:52.909729,ERROR,monitoring-service,Payment processing failed,10.0.138.172,4393,,0
+2025-12-02 17:29:52.909729,INFO,firewall,Cache hit,10.0.83.22,164,,0
+2025-12-02 17:29:58.909729,INFO,notification-service,Data synchronized,10.0.180.67,87,,0
+2025-12-02 17:29:56.909729,WARNING,cache,Slow query detected,10.0.244.135,4950,,0
+2025-12-02 17:30:02.909729,INFO,load-balancer,Database connection established,10.0.53.170,237,,0
+2025-12-02 17:30:03.909729,DEBUG,database,Parsing JSON response,10.0.99.143,395,,0
+2025-12-02 17:30:07.909729,INFO,web-server,User login successful,10.0.248.187,220,,0
+2025-12-02 17:30:08.909729,WARNING,cache,Memory usage above threshold,10.0.113.199,4943,corr_7007,0
+2025-12-02 17:30:06.909729,INFO,web-server,Cache hit,10.0.120.71,34,,0
+2025-12-02 17:30:13.909729,ERROR,ids,Database connection lost,10.0.225.195,884,,0
+2025-12-02 17:30:14.909729,WARNING,user-service,SSL certificate expiring soon,10.0.139.110,4118,,0
+2025-12-02 17:30:15.909729,CRITICAL,order-service,Recovery impossible,10.0.7.52,305,,0
+2025-12-02 17:30:19.909729,INFO,cache,Health check passed,10.0.156.159,62,corr_8079,0
+2025-12-02 17:30:18.909729,WARNING,api-gateway,Network latency increased,10.0.185.190,1529,,0
+2025-12-02 17:30:21.909729,CRITICAL,api-gateway,Service outage,10.0.121.148,440,,0
+2025-12-02 17:30:20.909729,DEBUG,user-service,Parsing JSON response,10.0.57.20,471,corr_4799,0
+2025-12-02 17:30:27.909729,DEBUG,payment-service,Generating JWT token,10.0.164.51,203,,0
+2025-12-02 17:30:27.909729,INFO,user-service,Database connection established,10.0.55.178,421,corr_4959,0
+2025-12-02 17:30:30.909729,INFO,web-server,User login successful,10.0.189.99,173,,0
+2025-12-02 17:30:31.909729,WARNING,auth-service,Cache miss rate high,10.0.54.38,2792,,0
+2025-12-02 17:30:35.909729,WARNING,web-server,Unusual traffic pattern,10.0.6.227,697,,0
+2025-12-02 17:30:35.909729,ERROR,firewall,Permission denied,10.0.28.177,81,,0
+2025-12-02 17:30:37.909729,CRITICAL,load-balancer,Emergency shutdown required,10.0.66.4,211,,0
+2025-12-02 17:30:37.909729,CRITICAL,cache,Complete system failure,10.0.181.179,240,,0
+2025-12-02 17:30:40.909729,INFO,order-service,Database connection established,10.0.29.115,498,,0
+2025-12-02 17:30:43.909729,DEBUG,inventory-service,Logging metric data,10.0.157.220,395,,0
+2025-12-02 17:30:43.909729,INFO,auth-service,Configuration loaded,10.0.254.149,474,,0
+2025-12-02 17:30:48.909729,ERROR,order-service,Authentication failed,10.0.156.62,1748,,0
+2025-12-02 17:30:51.909729,INFO,load-balancer,Configuration loaded,10.0.187.38,350,,0
+2025-12-02 17:30:50.909729,INFO,order-service,Database connection established,10.0.70.7,300,,0
+2025-12-02 17:30:54.909729,ERROR,api-gateway,Database connection lost,10.0.18.74,3960,,0
+2025-12-02 17:30:57.909729,INFO,cache,Request processed successfully,10.0.161.79,249,,0
+2025-12-02 17:30:55.909729,INFO,waf,User login successful,10.0.28.221,345,,0
+2025-12-02 17:31:00.909729,WARNING,auth-service,Disk space low,10.0.155.140,3925,,0
+2025-12-02 17:31:01.909729,ERROR,order-service,Service timeout,10.0.123.8,2930,,0
+2025-12-02 17:31:04.909729,INFO,firewall,Database connection established,10.0.103.87,411,,0
+2025-12-02 17:31:06.909729,WARNING,api-gateway,Cache miss rate high,10.0.95.204,3167,,0
+2025-12-02 17:31:06.909729,CRITICAL,order-service,Emergency shutdown required,10.0.67.233,452,,0
+2025-12-02 17:31:10.909729,INFO,inventory-service,Backup completed,10.0.190.212,432,corr_4792,0
+2025-12-02 17:31:08.909729,ERROR,order-service,Payment processing failed,10.0.113.143,3007,,0
+2025-12-02 17:31:15.909729,CRITICAL,system,Load balancer overwhelmed,10.0.16.102,84,,1
+2025-12-02 17:31:15.909729,WARNING,system,Memory usage above threshold,10.0.42.244,1130,,1
+2025-12-02 17:31:17.909729,ERROR,user-service,Service response time degraded to 2594ms,10.0.126.162,4015,,1
+2025-12-02 17:31:18.909729,WARNING,system,CPU temperature high,10.0.137.176,1901,corr_4587,1
+2025-12-02 17:31:20.909729,ERROR,system,Service response time degraded to 3556ms,10.0.7.53,4380,corr_6300,1
+2025-12-02 17:31:20.909729,WARNING,system,Slow query detected,10.0.72.138,3846,,1
+2025-12-02 17:31:24.909729,WARNING,waf,CPU temperature high,10.0.170.248,1581,,1
+2025-12-02 17:31:29.909729,WARNING,system,Cache miss rate high,10.0.22.131,971,corr_7328,1
+2025-12-02 17:31:30.909729,CRITICAL,system,Network packet loss 19%,10.0.70.163,402,corr_1283,1
+2025-12-02 17:31:30.909729,CRITICAL,system,CPU spike to 93%,10.0.15.15,347,corr_1494,1
+2025-12-02 17:31:30.909729,ERROR,system,Distributed system partition,10.0.27.46,1338,,1
+2025-12-02 17:31:35.909729,DEBUG,notification-service,SQL query executed,10.0.127.251,216,,0
+2025-12-02 17:31:38.909729,WARNING,order-service,High response time detected,10.0.115.197,3797,,0
+2025-12-02 17:31:36.909729,WARNING,order-service,Network latency increased,10.0.218.144,2903,,0
+2025-12-02 17:31:43.909729,ERROR,api-gateway,Authentication failed,10.0.52.141,111,,0
+2025-12-02 17:31:40.909729,DEBUG,database,Parsing JSON response,10.0.3.19,239,,0
+2025-12-02 17:31:44.909729,INFO,user-service,Cache hit,10.0.134.32,78,,0
+2025-12-02 17:31:48.909729,INFO,monitoring-service,Health check passed,10.0.104.217,356,,0
+2025-12-02 17:31:50.909729,WARNING,waf,Unusual traffic pattern,10.0.166.169,3118,,0
+2025-12-02 17:31:48.909729,INFO,auth-service,Configuration loaded,10.0.228.152,494,,0
+2025-12-02 17:31:51.909729,INFO,database,Email sent successfully,10.0.80.234,87,corr_6816,0
+2025-12-02 17:31:54.909729,INFO,web-server,Service started,10.0.205.186,215,corr_4712,0
+2025-12-02 17:31:58.909729,WARNING,web-server,Memory usage above threshold,10.0.242.223,1850,,0
+2025-12-02 17:31:56.909729,WARNING,auth-service,Connection pool at 80%,10.0.112.179,696,,0
+2025-12-02 17:32:03.909729,INFO,ids,Email sent successfully,10.0.195.221,29,corr_6437,0
+2025-12-02 17:32:05.909729,WARNING,web-server,Cache miss rate high,10.0.197.6,345,,0
+2025-12-02 17:32:02.909729,WARNING,notification-service,CPU temperature high,10.0.124.17,4358,,0
+2025-12-02 17:32:07.909729,INFO,api-gateway,User login successful,10.0.60.3,226,corr_9260,0
+2025-12-02 17:32:09.909729,DEBUG,waf,Validating user input,10.0.169.217,36,corr_8548,0
+2025-12-02 17:32:11.909729,WARNING,payment-service,Unusual traffic pattern,10.0.15.52,1138,,0
+2025-12-02 17:32:15.909729,INFO,order-service,Database connection established,10.0.60.175,464,,0
+2025-12-02 17:32:14.909729,WARNING,order-service,CPU temperature high,10.0.250.42,1859,,0
+2025-12-02 17:32:15.909729,WARNING,notification-service,Memory usage above threshold,10.0.54.84,2085,,0
+2025-12-02 17:32:20.909729,WARNING,auth-service,Memory usage above threshold,10.0.157.170,898,corr_5578,0
+2025-12-02 17:32:20.909729,WARNING,web-server,SSL certificate expiring soon,10.0.36.178,4208,,0
+2025-12-02 17:32:21.909729,ERROR,inventory-service,Database connection lost,10.0.129.43,1273,,0
+2025-12-02 17:32:27.909729,INFO,order-service,Service started,10.0.34.136,340,,0
+2025-12-02 17:32:25.909729,CRITICAL,ids,Emergency shutdown required,10.0.163.4,126,corr_6352,0
+2025-12-02 17:32:31.909729,INFO,payment-service,Request processed successfully,10.0.169.205,300,corr_5556,0
+2025-12-02 17:32:30.909729,WARNING,user-service,Connection pool at 80%,10.0.123.101,451,,0
+2025-12-02 17:32:34.909729,CRITICAL,database,Hardware failure,10.0.224.42,56,,0
+2025-12-02 17:32:34.909729,INFO,order-service,Health check passed,10.0.67.37,99,,0
+2025-12-02 17:32:35.909729,WARNING,cache,Slow query detected,10.0.180.119,3980,,0
+2025-12-02 17:32:40.909729,DEBUG,load-balancer,API call to external service,10.0.4.16,405,,0
+2025-12-02 17:32:38.909729,INFO,notification-service,Database connection established,10.0.18.110,226,corr_8213,0
+2025-12-02 17:32:40.909729,ERROR,load-balancer,Disk write failed,10.0.173.208,1828,,0
+2025-12-02 17:32:42.909729,INFO,web-server,Health check passed,10.0.83.253,225,,0
+2025-12-02 17:32:44.909729,INFO,web-server,Database connection established,10.0.140.41,380,,0
+2025-12-02 17:32:51.909729,INFO,auth-service,Configuration loaded,10.0.158.237,334,corr_2492,0
+2025-12-02 17:32:48.909729,INFO,api-gateway,Data synchronized,10.0.103.254,383,corr_9065,0
+2025-12-02 17:32:55.909729,WARNING,payment-service,Memory usage above threshold,10.0.207.242,4235,,0
+2025-12-02 17:32:53.909729,INFO,firewall,Backup completed,10.0.30.133,449,corr_9232,0
+2025-12-02 17:32:57.909729,WARNING,load-balancer,Unusual traffic pattern,10.0.91.132,4159,,0
+2025-12-02 17:33:00.909729,WARNING,web-server,Disk space low,10.0.183.130,2641,,0
+2025-12-02 17:32:59.909729,INFO,database,Health check passed,10.0.14.220,188,,0
+2025-12-02 17:33:02.909729,WARNING,auth-service,Disk space low,10.0.234.145,4301,,0
+2025-12-02 17:33:05.909729,INFO,load-balancer,Email sent successfully,10.0.253.208,232,,0
+2025-12-02 17:33:08.909729,INFO,firewall,Database connection established,10.0.121.53,281,corr_2789,0
+2025-12-02 17:33:10.909729,INFO,api-gateway,Database connection established,10.0.92.150,384,,0
+2025-12-02 17:33:12.909729,INFO,payment-service,Data synchronized,10.0.135.46,30,,0
+2025-12-02 17:33:11.909729,INFO,load-balancer,Email sent successfully,10.0.21.200,160,corr_2915,0
+2025-12-02 17:33:12.909729,CRITICAL,cache,Emergency shutdown required,10.0.225.190,173,,0
+2025-12-02 17:33:19.909729,WARNING,database,Slow query detected,10.0.90.176,2423,,0
+2025-12-02 17:33:19.909729,ERROR,load-balancer,Service timeout,10.0.38.242,365,corr_6220,0
+2025-12-02 17:33:20.909729,ERROR,firewall,Database connection lost,10.0.105.21,3971,corr_9002,0
+2025-12-02 17:33:20.909729,WARNING,order-service,Unusual traffic pattern,10.0.140.190,4732,,0
+2025-12-02 17:33:24.909729,INFO,load-balancer,Health check passed,10.0.46.110,301,,0
+2025-12-02 17:33:25.909729,WARNING,inventory-service,Connection pool at 80%,10.0.238.170,967,corr_2125,0
+2025-12-02 17:33:26.909729,ERROR,web-server,Service timeout,10.0.52.153,4499,corr_8422,0
+2025-12-02 17:33:29.909729,ERROR,inventory-service,File not found,10.0.157.1,1532,corr_3755,0
+2025-12-02 17:33:35.909729,ERROR,monitoring-service,Out of memory,10.0.6.102,1809,,0
+2025-12-02 17:33:35.909729,INFO,load-balancer,Health check passed,10.0.94.88,249,,0
+2025-12-02 17:33:35.909729,WARNING,api-gateway,Cache miss rate high,10.0.56.128,48,,0
+2025-12-02 17:33:41.909729,ERROR,api-gateway,Permission denied,10.0.146.204,2727,corr_5158,0
+2025-12-02 17:33:43.909729,INFO,firewall,Data synchronized,10.0.198.214,219,,0
+2025-12-02 17:33:41.909729,INFO,firewall,Backup completed,10.0.246.89,195,,0
+2025-12-02 17:33:44.909729,DEBUG,user-service,Logging metric data,10.0.232.124,52,corr_6800,0
+2025-12-02 17:33:45.909729,DEBUG,web-server,API call to external service,10.0.182.202,323,,0
+2025-12-02 17:33:46.909729,WARNING,inventory-service,High response time detected,10.0.37.31,613,,0
+2025-12-02 17:33:49.909729,CRITICAL,load-balancer,Hardware failure,10.0.86.245,332,,0
+2025-12-02 17:33:54.909729,INFO,ids,Cache hit,10.0.188.217,38,corr_3658,0
+2025-12-02 17:33:55.909729,INFO,ids,Email sent successfully,10.0.26.60,410,,0
+2025-12-02 17:33:57.909729,ERROR,firewall,Disk write failed,10.0.29.100,2510,,0
+2025-12-02 17:34:00.909729,WARNING,cache,Unusual traffic pattern,10.0.96.144,308,,0
+2025-12-02 17:33:59.909729,INFO,waf,Health check passed,10.0.243.116,261,,0
+2025-12-02 17:34:01.909729,INFO,order-service,Request processed successfully,10.0.7.6,100,,0
+2025-12-02 17:34:05.909729,ERROR,load-balancer,Network unreachable,10.0.99.38,3689,,0
+2025-12-02 17:34:07.909729,CRITICAL,user-service,Emergency shutdown required,10.0.67.152,185,corr_8110,0
+2025-12-02 17:34:06.909729,INFO,monitoring-service,Request processed successfully,10.0.194.145,268,,0
+2025-12-02 17:34:12.909729,INFO,payment-service,Data synchronized,10.0.184.19,426,,0
+2025-12-02 17:34:11.909729,WARNING,api-gateway,Unusual traffic pattern,10.0.199.205,3267,,0
+2025-12-02 17:34:12.909729,INFO,user-service,Cache hit,10.0.59.227,209,corr_3211,0
+2025-12-02 17:34:18.909729,ERROR,load-balancer,Network unreachable,10.0.47.39,2040,corr_4591,0
+2025-12-02 17:34:20.909729,ERROR,cache,Payment processing failed,10.0.23.153,776,corr_1422,0
+2025-12-02 17:34:20.909729,INFO,firewall,Service started,10.0.91.11,493,corr_7567,0
+2025-12-02 17:34:21.909729,DEBUG,api-gateway,API call to external service,10.0.182.68,151,,0
+2025-12-02 17:34:25.909729,INFO,waf,Cache hit,10.0.121.26,62,,0
+2025-12-02 17:34:26.909729,INFO,payment-service,Email sent successfully,10.0.94.39,453,,0
+2025-12-02 17:34:30.909729,WARNING,order-service,Cache miss rate high,10.0.70.202,593,corr_8832,0
+2025-12-02 17:34:29.909729,INFO,payment-service,Email sent successfully,10.0.185.171,59,corr_2831,0
+2025-12-02 17:34:34.909729,INFO,ids,User login successful,10.0.26.26,11,corr_6307,0
+2025-12-02 17:34:34.909729,ERROR,firewall,API rate limit exceeded,10.0.162.162,1158,,0
+2025-12-02 17:34:36.909729,INFO,notification-service,Backup completed,10.0.46.254,138,corr_2388,0
+2025-12-02 17:34:36.909729,INFO,auth-service,Data synchronized,10.0.3.2,49,corr_9727,0
+2025-12-02 17:34:42.909729,ERROR,load-balancer,API rate limit exceeded,10.0.171.180,4813,,0
+2025-12-02 17:34:43.909729,INFO,web-server,Data synchronized,10.0.133.130,352,,0
+2025-12-02 17:34:46.909729,DEBUG,waf,Processing request ID 12345,10.0.42.120,411,corr_6714,0
+2025-12-02 17:34:48.909729,WARNING,load-balancer,Connection pool at 80%,10.0.96.173,2201,,0
+2025-12-02 17:34:50.909729,INFO,cache,Backup completed,10.0.215.8,428,,0
+2025-12-02 17:34:49.909729,INFO,cache,User login successful,10.0.234.113,174,,0
+2025-12-02 17:34:53.909729,CRITICAL,order-service,Security breach,10.0.56.197,435,,0
+2025-12-02 17:34:56.909729,ERROR,monitoring-service,File not found,10.0.205.180,4793,corr_4656,0
+2025-12-02 17:34:58.909729,DEBUG,database,API call to external service,10.0.43.233,146,corr_3621,0
+2025-12-02 17:34:58.909729,WARNING,payment-service,Unusual traffic pattern,10.0.159.144,4118,,0
+2025-12-02 17:35:01.909729,WARNING,waf,Network latency increased,10.0.254.34,212,corr_4497,0
+2025-12-02 17:35:04.909729,DEBUG,api-gateway,Logging metric data,10.0.98.101,434,,0
+2025-12-02 17:35:04.909729,INFO,notification-service,Email sent successfully,10.0.242.217,80,,0
+2025-12-02 17:35:06.909729,INFO,notification-service,Request processed successfully,10.0.144.22,243,corr_3718,0
+2025-12-02 17:35:09.909729,INFO,monitoring-service,User login successful,10.0.33.61,23,,0
+2025-12-02 17:35:13.909729,WARNING,user-service,CPU temperature high,10.0.244.250,3355,,0
+2025-12-02 17:35:10.909729,CRITICAL,user-service,Service outage,10.0.165.231,326,,0
+2025-12-02 17:35:16.909729,ERROR,order-service,Database connection lost,10.0.3.25,750,,0
+2025-12-02 17:35:18.909729,INFO,waf,Backup completed,10.0.29.52,357,,0
+2025-12-02 17:35:19.909729,WARNING,user-service,Slow query detected,10.0.75.7,3339,,0
+2025-12-02 17:35:22.909729,DEBUG,api-gateway,Processing request ID 12345,10.0.42.21,399,,0
+2025-12-02 17:35:24.909729,INFO,order-service,Email sent successfully,10.0.252.94,14,,0
+2025-12-02 17:35:23.909729,INFO,load-balancer,Data synchronized,10.0.104.157,411,,0
+2025-12-02 17:35:29.909729,INFO,user-service,Service started,10.0.71.91,138,,0
+2025-12-02 17:35:26.909729,INFO,database,Request processed successfully,10.0.252.12,442,corr_1934,0
+2025-12-02 17:35:33.909729,ERROR,waf,File not found,10.0.80.74,4602,corr_2268,0
+2025-12-02 17:35:30.909729,INFO,auth-service,User login successful,10.0.251.104,395,,0
+2025-12-02 17:35:32.909729,INFO,notification-service,Configuration loaded,10.0.248.81,439,,0
+2025-12-02 17:35:38.909729,ERROR,database,Authentication failed,10.0.245.114,3263,,0
+2025-12-02 17:35:36.909729,WARNING,user-service,Disk space low,10.0.85.46,3786,,0
+2025-12-02 17:35:43.909729,INFO,database,Backup completed,10.0.75.53,139,corr_1128,0
+2025-12-02 17:35:40.909729,INFO,load-balancer,Database connection established,10.0.5.57,59,,0
+2025-12-02 17:35:46.909729,INFO,notification-service,Email sent successfully,10.0.26.1,280,corr_2970,0
+2025-12-02 17:35:49.909729,WARNING,monitoring-service,Disk space low,10.0.139.107,2397,corr_3620,0
+2025-12-02 17:35:49.909729,INFO,inventory-service,Request processed successfully,10.0.154.47,60,,0
+2025-12-02 17:35:49.909729,CRITICAL,order-service,System crash imminent,10.0.215.238,390,,0
+2025-12-02 17:35:53.909729,INFO,waf,Email sent successfully,10.0.5.150,358,,0
+2025-12-02 17:35:53.909729,INFO,cache,Database connection established,10.0.143.13,16,corr_5272,0
+2025-12-02 17:35:54.909729,ERROR,monitoring-service,Network unreachable,10.0.175.199,3345,,0
+2025-12-02 17:35:57.909729,CRITICAL,payment-service,Emergency shutdown required,10.0.84.77,229,corr_3280,0
+2025-12-02 17:35:58.909729,INFO,user-service,Configuration loaded,10.0.154.193,92,,0
+2025-12-02 17:36:00.909729,ERROR,monitoring-service,Permission denied,10.0.21.87,3790,,0
+2025-12-02 17:36:02.909729,INFO,database,Service started,10.0.114.43,313,,0
+2025-12-02 17:36:09.909729,INFO,web-server,Request processed successfully,10.0.9.128,309,,0
+2025-12-02 17:36:06.909729,ERROR,payment-service,Disk write failed,10.0.237.31,781,,0
+2025-12-02 17:36:09.909729,INFO,waf,Service started,10.0.250.23,91,,0
+2025-12-02 17:36:13.909729,ERROR,cache,Service timeout,10.0.201.229,1375,corr_9321,0
+2025-12-02 17:36:15.909729,ERROR,payment-service,Out of memory,10.0.214.149,3559,,0
+2025-12-02 17:36:18.909729,INFO,database,User login successful,10.0.171.241,472,,0
+2025-12-02 17:36:16.909729,WARNING,auth-service,Network latency increased,10.0.171.206,113,,0
+2025-12-02 17:36:22.909729,INFO,auth-service,Database connection established,10.0.203.192,106,corr_9731,0
+2025-12-02 17:36:21.909729,INFO,firewall,Email sent successfully,10.0.104.78,117,,0
+2025-12-02 17:36:26.909729,ERROR,monitoring-service,Service timeout,10.0.124.16,167,,0
+2025-12-02 17:36:29.909729,INFO,payment-service,Cache hit,10.0.255.52,376,,0
+2025-12-02 17:36:30.909729,WARNING,database,CPU temperature high,10.0.82.149,3075,,0
+2025-12-02 17:36:30.909729,WARNING,load-balancer,Connection pool at 80%,10.0.216.129,2966,,0
+2025-12-02 17:36:33.909729,INFO,cache,Data synchronized,10.0.2.116,141,,0
+2025-12-02 17:36:32.909729,INFO,ids,Email sent successfully,10.0.45.206,58,corr_8661,0
+2025-12-02 17:36:39.909729,INFO,notification-service,Configuration loaded,10.0.50.15,412,corr_9091,0
+2025-12-02 17:36:41.909729,WARNING,ids,Connection pool at 80%,10.0.29.89,2430,,0
+2025-12-02 17:36:41.909729,ERROR,api-gateway,Service timeout,10.0.142.57,1006,,0
+2025-12-02 17:36:45.909729,INFO,cache,Backup completed,10.0.29.45,440,,0
+2025-12-02 17:36:47.909729,INFO,notification-service,User login successful,10.0.48.154,347,,0
+2025-12-02 17:36:47.909729,ERROR,user-service,File not found,10.0.90.119,4727,,0
+2025-12-02 17:36:46.909729,CRITICAL,waf,Data loss detected,10.0.80.34,40,,0
+2025-12-02 17:36:50.909729,INFO,notification-service,Service started,10.0.109.202,335,,0
+2025-12-02 17:36:53.909729,WARNING,payment-service,Network latency increased,10.0.216.164,2143,,0
+2025-12-02 17:36:57.909729,CRITICAL,user-service,Hardware failure,10.0.33.198,109,corr_6119,0
+2025-12-02 17:36:55.909729,WARNING,ids,High response time detected,10.0.178.10,4159,,0
+2025-12-02 17:36:57.909729,WARNING,load-balancer,Network latency increased,10.0.205.242,3444,corr_6487,0
+2025-12-02 17:36:59.909729,INFO,cache,Backup completed,10.0.50.241,172,,0
+2025-12-02 17:37:02.909729,INFO,payment-service,Request processed successfully,10.0.146.5,62,,0
+2025-12-02 17:37:06.909729,INFO,order-service,Cache hit,10.0.27.217,265,corr_7903,0
+2025-12-02 17:37:09.909729,WARNING,inventory-service,High response time detected,10.0.224.39,843,corr_2486,0
+2025-12-02 17:37:09.909729,DEBUG,inventory-service,API call to external service,10.0.27.43,201,,0
+2025-12-02 17:37:11.909729,ERROR,waf,API rate limit exceeded,10.0.97.143,1647,corr_9038,0
+2025-12-02 17:37:12.909729,DEBUG,user-service,SQL query executed,10.0.189.20,287,,0
+2025-12-02 17:37:14.909729,INFO,auth-service,Cache hit,10.0.8.21,390,,0
+2025-12-02 17:37:17.909729,DEBUG,inventory-service,Validating user input,10.0.212.59,40,,0
+2025-12-02 17:37:21.909729,INFO,database,Data synchronized,10.0.90.12,256,,0
+2025-12-02 17:37:22.909729,INFO,ids,Data synchronized,10.0.175.179,307,,0
+2025-12-02 17:37:25.909729,WARNING,firewall,High response time detected,10.0.183.136,3648,,0
+2025-12-02 17:37:23.909729,CRITICAL,ids,Data corruption detected,10.0.139.98,79,,0
+2025-12-02 17:37:29.909729,CRITICAL,api-gateway,Hardware failure,10.0.247.250,187,corr_6011,0
+2025-12-02 17:37:28.909729,INFO,inventory-service,Configuration loaded,10.0.165.24,432,,0
+2025-12-02 17:37:30.909729,INFO,payment-service,Email sent successfully,10.0.103.206,27,,0
+2025-12-02 17:37:31.909729,INFO,database,Email sent successfully,10.0.24.190,213,,0
+2025-12-02 17:37:37.909729,INFO,order-service,Data synchronized,10.0.25.227,299,,0
+2025-12-02 17:37:36.909729,WARNING,inventory-service,Connection pool at 80%,10.0.202.195,159,corr_8844,0
+2025-12-02 17:37:38.909729,WARNING,monitoring-service,Network latency increased,10.0.88.87,3212,,0
+2025-12-02 17:37:39.909729,INFO,ids,Data synchronized,10.0.85.222,294,,0
+2025-12-02 17:37:41.909729,WARNING,auth-service,Slow query detected,10.0.121.190,4969,,0
+2025-12-02 17:37:45.909729,INFO,load-balancer,Cache hit,10.0.186.10,188,corr_3446,0
+2025-12-02 17:37:49.909729,CRITICAL,payment-service,Complete system failure,10.0.169.103,151,,0
+2025-12-02 17:37:50.909729,INFO,notification-service,Backup completed,10.0.220.129,457,,0
+2025-12-02 17:37:53.909729,INFO,ids,Service started,10.0.46.42,50,,0
+2025-12-02 17:37:52.909729,WARNING,notification-service,Unusual traffic pattern,10.0.16.37,4853,,0
+2025-12-02 17:37:52.909729,ERROR,user-service,Payment processing failed,10.0.183.98,317,corr_1041,0
+2025-12-02 17:37:59.909729,INFO,cache,Cache hit,10.0.253.62,188,,0
+2025-12-02 17:38:01.909729,CRITICAL,payment-service,Critical vulnerability,10.0.255.62,99,,0
+2025-12-02 17:38:03.909729,WARNING,api-gateway,Connection pool at 80%,10.0.34.126,2485,corr_9974,0
+2025-12-02 17:38:02.909729,WARNING,api-gateway,High response time detected,10.0.139.251,3227,,0
+2025-12-02 17:38:02.909729,WARNING,cache,CPU temperature high,10.0.156.154,4418,,0
+2025-12-02 17:38:06.909729,ERROR,monitoring-service,Network unreachable,10.0.180.87,129,,0
+2025-12-02 17:38:11.909729,INFO,auth-service,Request processed successfully,10.0.42.69,200,,0
+2025-12-02 17:38:08.909729,WARNING,order-service,Memory usage above threshold,10.0.196.226,575,,0
+2025-12-02 17:38:12.909729,ERROR,web-server,Network unreachable,10.0.97.138,1601,,0
+2025-12-02 17:38:14.909729,ERROR,web-server,Network unreachable,10.0.172.240,3367,,0
+2025-12-02 17:38:18.909729,CRITICAL,firewall,Security breach,10.0.160.244,196,,0
+2025-12-02 17:38:18.909729,WARNING,auth-service,Cache miss rate high,10.0.60.217,297,,0
+2025-12-02 17:38:20.909729,WARNING,api-gateway,Disk space low,10.0.116.7,3231,,0
+2025-12-02 17:38:20.909729,WARNING,user-service,Network latency increased,10.0.6.22,4262,,0
+2025-12-02 17:38:26.909729,INFO,payment-service,Data synchronized,10.0.162.37,205,corr_3190,0
+2025-12-02 17:38:28.909729,INFO,payment-service,Data synchronized,10.0.248.239,396,,0
+2025-12-02 17:38:29.909729,DEBUG,waf,Cleaning temporary files,10.0.98.20,472,,0
+2025-12-02 17:38:30.909729,WARNING,user-service,CPU temperature high,10.0.207.142,3753,,0
+2025-12-02 17:38:32.909729,WARNING,notification-service,Memory usage above threshold,10.0.37.186,4344,,0
+2025-12-02 17:38:36.909729,WARNING,notification-service,Slow query detected,10.0.60.231,3388,corr_8262,0
+2025-12-02 17:38:39.909729,INFO,payment-service,Health check passed,10.0.185.110,469,,0
+2025-12-02 17:38:36.909729,WARNING,user-service,CPU temperature high,10.0.100.73,4940,,0
+2025-12-02 17:38:40.909729,WARNING,waf,SSL certificate expiring soon,10.0.129.131,3279,,0
+2025-12-02 17:38:42.909729,DEBUG,user-service,Cleaning temporary files,10.0.235.180,193,corr_6479,0
+2025-12-02 17:38:45.909729,WARNING,waf,Slow query detected,10.0.181.80,1897,,0
+2025-12-02 17:38:49.909729,INFO,monitoring-service,Email sent successfully,10.0.220.16,165,corr_4312,0
+2025-12-02 17:38:50.909729,INFO,ids,Service started,10.0.127.238,340,,0
+2025-12-02 17:38:51.909729,WARNING,auth-service,Network latency increased,10.0.66.154,3640,,0
+2025-12-02 17:38:55.909729,WARNING,database,Slow query detected,10.0.203.135,4619,,0
+2025-12-02 17:38:56.909729,WARNING,monitoring-service,Connection pool at 80%,10.0.111.193,253,corr_4790,0
+2025-12-02 17:38:58.909729,WARNING,notification-service,Memory usage above threshold,10.0.28.218,2154,corr_7821,0
+2025-12-02 17:38:56.909729,INFO,api-gateway,Configuration loaded,10.0.42.50,144,,0
+2025-12-02 17:39:03.909729,INFO,api-gateway,Health check passed,10.0.125.186,400,,0
+2025-12-02 17:39:02.909729,INFO,waf,Data synchronized,10.0.189.4,226,,0
+2025-12-02 17:39:04.909729,CRITICAL,auth-service,System crash imminent,10.0.225.117,184,,0
+2025-12-02 17:39:08.909729,WARNING,ids,CPU temperature high,10.0.215.204,4909,corr_4346,0
+2025-12-02 17:39:07.909729,INFO,database,Data synchronized,10.0.3.42,107,,0
+2025-12-02 17:39:09.909729,WARNING,monitoring-service,Disk space low,10.0.118.151,892,,0
+2025-12-02 17:39:14.909729,WARNING,auth-service,Unusual traffic pattern,10.0.254.75,712,corr_3880,0
+2025-12-02 17:39:13.909729,INFO,load-balancer,Service started,10.0.33.208,411,,0
+2025-12-02 17:39:17.909729,CRITICAL,inventory-service,Recovery impossible,10.0.199.82,204,,0
+2025-12-02 17:39:20.909729,ERROR,load-balancer,Network unreachable,10.0.163.71,507,,0
+2025-12-02 17:39:20.909729,WARNING,load-balancer,Slow query detected,10.0.243.39,914,,0
+2025-12-02 17:39:24.909729,WARNING,cache,Connection pool at 80%,10.0.225.151,4122,corr_6586,0
+2025-12-02 17:39:27.909729,ERROR,web-server,Permission denied,10.0.96.117,3077,corr_4845,0
+2025-12-02 17:39:25.909729,INFO,auth-service,Request processed successfully,10.0.150.5,148,,0
+2025-12-02 17:39:29.909729,WARNING,firewall,Memory usage above threshold,10.0.144.171,4133,,0
+2025-12-02 17:39:32.909729,ERROR,cache,Authentication failed,10.0.77.182,1105,,0
+2025-12-02 17:39:34.909729,INFO,payment-service,Data synchronized,10.0.94.69,204,corr_9896,0
+2025-12-02 17:39:34.909729,CRITICAL,ids,Hardware failure,10.0.238.123,429,corr_2555,0
+2025-12-02 17:39:36.909729,CRITICAL,web-server,Service outage,10.0.40.102,471,,0
+2025-12-02 17:39:38.909729,ERROR,monitoring-service,File not found,10.0.244.200,3550,corr_7345,0
+2025-12-02 17:39:42.909729,WARNING,order-service,CPU temperature high,10.0.172.252,4350,,0
+2025-12-02 17:39:41.909729,CRITICAL,web-server,Recovery impossible,10.0.2.97,99,corr_3852,0
+2025-12-02 17:39:46.909729,WARNING,payment-service,CPU temperature high,10.0.195.110,2030,,0
+2025-12-02 17:39:49.909729,INFO,database,Data synchronized,10.0.137.111,480,,0
+2025-12-02 17:39:49.909729,ERROR,order-service,API rate limit exceeded,10.0.70.88,4390,corr_4075,0
+2025-12-02 17:39:48.909729,INFO,payment-service,Cache hit,10.0.26.89,464,,0
+2025-12-02 17:39:55.909729,ERROR,cache,Permission denied,10.0.84.49,1212,,0
+2025-12-02 17:39:55.909729,CRITICAL,web-server,Data loss detected,10.0.175.43,136,,0
+2025-12-02 17:39:54.909729,INFO,payment-service,Email sent successfully,10.0.21.234,490,,0
+2025-12-02 17:39:56.909729,ERROR,order-service,API rate limit exceeded,10.0.236.100,4300,corr_4044,0
+2025-12-02 17:40:00.909729,ERROR,notification-service,Disk write failed,10.0.18.17,1679,corr_8933,0
+2025-12-02 17:40:04.909729,CRITICAL,web-server,Data corruption detected,10.0.82.233,224,corr_6726,0
+2025-12-02 17:40:07.909729,WARNING,firewall,High response time detected,10.0.41.175,612,corr_6282,0
+2025-12-02 17:40:04.909729,WARNING,load-balancer,SSL certificate expiring soon,10.0.62.191,1088,,0
+2025-12-02 17:40:09.909729,INFO,user-service,Database connection established,10.0.228.12,18,,0
+2025-12-02 17:40:09.909729,INFO,waf,Data synchronized,10.0.242.189,225,corr_5340,0
+2025-12-02 17:40:15.909729,DEBUG,ids,Processing request ID 12345,10.0.235.85,93,corr_3721,0
+2025-12-02 17:40:17.909729,INFO,user-service,Cache hit,10.0.81.159,373,corr_7164,0
+2025-12-02 17:40:16.909729,ERROR,order-service,Service timeout,10.0.45.90,4136,corr_1672,0
+2025-12-02 17:40:17.909729,ERROR,database,Payment processing failed,10.0.204.82,1556,,0
+2025-12-02 17:40:22.909729,INFO,database,Cache hit,10.0.57.117,374,corr_5867,0
+2025-12-02 17:40:25.909729,CRITICAL,inventory-service,Data loss detected,10.0.45.68,27,corr_3135,0
+2025-12-02 17:40:26.909729,ERROR,web-server,Payment processing failed,10.0.230.234,181,,0
+2025-12-02 17:40:26.909729,CRITICAL,user-service,Data corruption detected,10.0.80.200,279,,0
+2025-12-02 17:40:28.909729,INFO,auth-service,Cache hit,10.0.224.215,429,corr_6036,0
+2025-12-02 17:40:29.909729,WARNING,load-balancer,Network latency increased,10.0.100.1,3508,corr_7596,0
+2025-12-02 17:40:31.909729,WARNING,order-service,Connection pool at 80%,10.0.66.108,1217,,0
+2025-12-02 17:40:36.909729,INFO,order-service,Request processed successfully,10.0.207.100,307,,0
+2025-12-02 17:40:34.909729,INFO,firewall,User login successful,10.0.227.211,421,corr_5014,0
+2025-12-02 17:40:41.909729,WARNING,firewall,High response time detected,10.0.141.254,4384,,0
+2025-12-02 17:40:43.909729,INFO,database,Cache hit,10.0.83.252,356,,0
+2025-12-02 17:40:45.909729,INFO,notification-service,Database connection established,10.0.206.114,415,,0
+2025-12-02 17:40:47.909729,INFO,monitoring-service,Email sent successfully,10.0.155.220,470,,0
+2025-12-02 17:40:46.909729,ERROR,payment-service,Payment processing failed,10.0.199.32,2673,corr_4423,0
+2025-12-02 17:40:50.909729,INFO,api-gateway,Data synchronized,10.0.39.118,461,,0
+2025-12-02 17:40:52.909729,WARNING,api-gateway,Disk space low,10.0.255.87,2409,,0
+2025-12-02 17:40:51.909729,WARNING,monitoring-service,Network latency increased,10.0.30.161,1200,,0
+2025-12-02 17:40:54.909729,INFO,inventory-service,Configuration loaded,10.0.133.124,168,,0
+2025-12-02 17:40:56.909729,WARNING,user-service,SSL certificate expiring soon,10.0.175.166,259,,0
+2025-12-02 17:41:01.909729,INFO,api-gateway,Backup completed,10.0.79.89,85,,0
+2025-12-02 17:41:03.909729,WARNING,database,Disk space low,10.0.103.224,4894,,0
+2025-12-02 17:41:05.909729,DEBUG,load-balancer,Cache key: user_profile_789,10.0.203.76,487,,0
+2025-12-02 17:41:02.909729,ERROR,notification-service,Disk write failed,10.0.15.195,188,,0
+2025-12-02 17:41:08.909729,INFO,firewall,Cache hit,10.0.215.18,376,,0
+2025-12-02 17:41:06.909729,WARNING,auth-service,Cache miss rate high,10.0.120.92,2775,,0
+2025-12-02 17:41:13.909729,WARNING,payment-service,High response time detected,10.0.175.237,2724,,0
+2025-12-02 17:41:15.909729,ERROR,load-balancer,API rate limit exceeded,10.0.219.31,2671,,0
+2025-12-02 17:41:17.909729,INFO,notification-service,Cache hit,10.0.189.27,481,,0
+2025-12-02 17:41:14.909729,INFO,payment-service,Health check passed,10.0.68.104,358,,0
+2025-12-02 17:41:18.909729,INFO,ids,Cache hit,10.0.214.169,216,,0
+2025-12-02 17:41:19.909729,CRITICAL,web-server,Recovery impossible,10.0.254.118,128,,0
+2025-12-02 17:41:20.909729,INFO,database,Data synchronized,10.0.100.201,280,,0
+2025-12-02 17:41:24.909729,WARNING,inventory-service,Memory usage above threshold,10.0.41.158,3710,corr_1068,0
+2025-12-02 17:41:27.909729,DEBUG,inventory-service,Validating user input,10.0.74.228,233,corr_1478,0
+2025-12-02 17:41:26.909729,INFO,order-service,Email sent successfully,10.0.142.170,436,corr_5975,0
+2025-12-02 17:41:31.909729,INFO,api-gateway,Health check passed,10.0.49.190,199,,0
+2025-12-02 17:41:33.909729,INFO,ids,Request processed successfully,10.0.244.42,101,,0
+2025-12-02 17:41:32.909729,CRITICAL,cache,Emergency shutdown required,10.0.54.25,423,,0
+2025-12-02 17:41:36.909729,DEBUG,web-server,Processing request ID 12345,10.0.129.191,18,,0
+2025-12-02 17:41:39.909729,INFO,inventory-service,Service started,10.0.23.135,300,corr_7873,0
+2025-12-02 17:41:41.909729,ERROR,load-balancer,Out of memory,10.0.116.75,889,,0
+2025-12-02 17:41:42.909729,WARNING,user-service,High response time detected,10.0.64.41,1029,,0
+2025-12-02 17:41:47.909729,INFO,order-service,Email sent successfully,10.0.98.119,257,corr_3515,0
+2025-12-02 17:41:49.909729,INFO,notification-service,Cache hit,10.0.55.55,449,corr_7399,0
+2025-12-02 17:41:46.909729,WARNING,auth-service,Slow query detected,10.0.2.150,2856,,0
+2025-12-02 17:41:51.909729,INFO,database,User login successful,10.0.209.240,447,corr_2654,0
+2025-12-02 17:41:51.909729,INFO,ids,Data synchronized,10.0.151.159,427,,0
+2025-12-02 17:41:54.909729,INFO,cache,Cache hit,10.0.189.61,101,,0
+2025-12-02 17:41:58.909729,WARNING,ids,SSL certificate expiring soon,10.0.121.184,4800,,0
+2025-12-02 17:42:01.909729,WARNING,payment-service,Connection pool at 80%,10.0.183.220,673,corr_8297,0
+2025-12-02 17:42:03.909729,INFO,cache,Email sent successfully,10.0.171.113,70,corr_9644,0
+2025-12-02 17:42:00.909729,INFO,payment-service,Service started,10.0.54.195,410,corr_2639,0
+2025-12-02 17:42:04.909729,INFO,firewall,User login successful,10.0.82.36,62,,0
+2025-12-02 17:42:08.909729,INFO,waf,Data synchronized,10.0.182.38,344,corr_6049,0
+2025-12-02 17:42:10.909729,INFO,notification-service,Data synchronized,10.0.237.228,184,,0
+2025-12-02 17:42:12.909729,WARNING,inventory-service,CPU temperature high,10.0.79.45,4842,,0
+2025-12-02 17:42:11.909729,INFO,waf,Email sent successfully,10.0.200.125,166,,0
+2025-12-02 17:42:16.909729,INFO,notification-service,Data synchronized,10.0.32.178,141,,0
+2025-12-02 17:42:18.909729,INFO,cache,Cache hit,10.0.140.10,148,,0
+2025-12-02 17:42:19.909729,INFO,database,Database connection established,10.0.141.87,68,,0
+2025-12-02 17:42:21.909729,WARNING,ids,High response time detected,10.0.75.34,2175,corr_5846,0
+2025-12-02 17:42:23.909729,DEBUG,notification-service,Compressing response,10.0.123.90,291,,0
+2025-12-02 17:42:26.909729,INFO,waf,Request processed successfully,10.0.52.4,455,,0
+2025-12-02 17:42:25.909729,ERROR,database,API rate limit exceeded,10.0.105.134,4964,,0
+2025-12-02 17:42:27.909729,INFO,load-balancer,User login successful,10.0.163.95,406,,0
+2025-12-02 17:42:31.909729,ERROR,inventory-service,Permission denied,10.0.71.204,3763,,0
+2025-12-02 17:42:32.909729,WARNING,firewall,Disk space low,10.0.84.85,3411,,0
+2025-12-02 17:42:36.909729,WARNING,payment-service,Slow query detected,10.0.190.6,2687,,0
+2025-12-02 17:42:37.909729,INFO,waf,Service started,10.0.131.49,220,,0
+2025-12-02 17:42:37.909729,ERROR,user-service,Payment processing failed,10.0.14.60,2167,,0
+2025-12-02 17:42:38.909729,WARNING,load-balancer,Disk space low,10.0.42.100,3190,,0
+2025-12-02 17:42:45.909729,WARNING,user-service,Connection pool at 80%,10.0.0.48,4095,,0
+2025-12-02 17:42:44.909729,WARNING,database,Network latency increased,10.0.90.8,3057,,0
+2025-12-02 17:42:47.909729,INFO,ids,Configuration loaded,10.0.191.254,412,,0
+2025-12-02 17:42:47.909729,WARNING,ids,High response time detected,10.0.180.130,3538,corr_9403,0
+2025-12-02 17:42:52.909729,ERROR,web-server,Service timeout,10.0.159.111,2402,,0
+2025-12-02 17:42:51.909729,CRITICAL,load-balancer,Data loss detected,10.0.168.120,442,corr_6353,0
+2025-12-02 17:42:54.909729,WARNING,notification-service,Memory usage above threshold,10.0.39.4,474,,0
+2025-12-02 17:42:59.909729,INFO,auth-service,Service started,10.0.23.150,111,corr_7518,0
+2025-12-02 17:42:57.909729,INFO,web-server,User login successful,10.0.169.40,469,,0
+2025-12-02 17:43:03.909729,INFO,api-gateway,Service started,10.0.153.103,32,corr_9250,0
+2025-12-02 17:43:03.909729,WARNING,order-service,Connection pool at 80%,10.0.92.135,4018,,0
+2025-12-02 17:43:03.909729,CRITICAL,load-balancer,Emergency shutdown required,10.0.6.201,274,,0
+2025-12-02 17:43:07.909729,ERROR,order-service,Out of memory,10.0.65.254,4151,corr_9036,0
+2025-12-02 17:43:09.909729,INFO,ids,Request processed successfully,10.0.69.123,87,,0
+2025-12-02 17:43:12.909729,WARNING,payment-service,Slow query detected,10.0.195.46,4705,,0
+2025-12-02 17:43:10.909729,WARNING,database,CPU temperature high,10.0.220.53,1641,,0
+2025-12-02 17:43:14.909729,WARNING,database,Cache miss rate high,10.0.212.23,339,,0
+2025-12-02 17:43:14.909729,WARNING,api-gateway,Connection pool at 80%,10.0.74.247,604,,0
+2025-12-02 17:43:19.909729,DEBUG,web-server,Validating user input,10.0.251.245,99,,0
+2025-12-02 17:43:23.909729,WARNING,web-server,SSL certificate expiring soon,10.0.33.171,32,,0
+2025-12-02 17:43:21.909729,INFO,api-gateway,Backup completed,10.0.222.182,497,,0
+2025-12-02 17:43:24.909729,INFO,waf,Backup completed,10.0.120.188,53,,0
+2025-12-02 17:43:25.909729,INFO,firewall,Database connection established,10.0.112.85,184,corr_2051,0
+2025-12-02 17:43:26.909729,ERROR,order-service,Permission denied,10.0.75.36,2199,corr_3954,0
+2025-12-02 17:43:30.909729,CRITICAL,notification-service,Hardware failure,10.0.132.180,467,,0
+2025-12-02 17:43:35.909729,INFO,ids,Cache hit,10.0.119.158,334,,0
+2025-12-02 17:43:37.909729,DEBUG,waf,Logging metric data,10.0.104.46,68,corr_7991,0
+2025-12-02 17:43:34.909729,DEBUG,firewall,API call to external service,10.0.86.251,191,,0
+2025-12-02 17:43:37.909729,INFO,payment-service,Backup completed,10.0.228.248,485,,0
+2025-12-02 17:43:38.909729,INFO,monitoring-service,Database connection established,10.0.77.178,37,corr_5255,0
+2025-12-02 17:43:44.909729,ERROR,ids,API rate limit exceeded,10.0.117.90,458,,0
+2025-12-02 17:43:44.909729,INFO,cache,Service started,10.0.253.230,218,corr_2723,0
+2025-12-02 17:43:44.909729,INFO,load-balancer,Service started,10.0.132.86,267,,0
+2025-12-02 17:43:48.909729,INFO,database,Configuration loaded,10.0.168.120,299,,0
+2025-12-02 17:43:53.909729,CRITICAL,database,Emergency shutdown required,10.0.4.8,353,,0
+2025-12-02 17:43:52.909729,WARNING,web-server,CPU temperature high,10.0.239.218,1250,,0
+2025-12-02 17:43:53.909729,INFO,notification-service,Backup completed,10.0.121.180,496,,0
+2025-12-02 17:43:56.909729,INFO,database,Request processed successfully,10.0.188.223,276,,0
+2025-12-02 17:43:56.909729,ERROR,monitoring-service,Payment processing failed,10.0.221.70,4614,,0
+2025-12-02 17:44:02.909729,WARNING,payment-service,Memory usage above threshold,10.0.30.72,2387,corr_5417,0
+2025-12-02 17:44:03.909729,WARNING,waf,Memory usage above threshold,10.0.19.102,319,,0
+2025-12-02 17:44:03.909729,ERROR,waf,Payment processing failed,10.0.82.21,1268,,0
+2025-12-02 17:44:09.909729,INFO,inventory-service,Configuration loaded,10.0.68.220,101,,0
+2025-12-02 17:44:10.909729,INFO,notification-service,Service started,10.0.155.1,119,,0
+2025-12-02 17:44:13.909729,INFO,notification-service,Configuration loaded,10.0.104.49,471,corr_2911,0
+2025-12-02 17:44:10.909729,WARNING,ids,CPU temperature high,10.0.95.119,3241,,0
+2025-12-02 17:44:17.909729,WARNING,order-service,Network latency increased,10.0.74.17,1528,,0
+2025-12-02 17:44:19.909729,CRITICAL,api-gateway,System crash imminent,10.0.121.58,37,,0
+2025-12-02 17:44:19.909729,ERROR,load-balancer,Permission denied,10.0.66.73,2070,corr_7048,0
+2025-12-02 17:44:23.909729,ERROR,inventory-service,Service timeout,10.0.167.145,885,,0
+2025-12-02 17:44:20.909729,INFO,notification-service,Request processed successfully,10.0.155.155,321,,0
+2025-12-02 17:44:25.909729,INFO,payment-service,Service started,10.0.62.177,381,corr_3621,0
+2025-12-02 17:44:26.909729,CRITICAL,waf,Critical vulnerability,10.0.135.4,210,corr_7467,0
+2025-12-02 17:44:30.909729,CRITICAL,notification-service,Recovery impossible,10.0.46.108,231,,0
+2025-12-02 17:44:32.909729,WARNING,api-gateway,Memory usage above threshold,10.0.128.118,1724,,0
+2025-12-02 17:44:35.909729,ERROR,database,Disk write failed,10.0.32.155,2401,,0
+2025-12-02 17:44:34.909729,INFO,order-service,Health check passed,10.0.36.2,363,,0
+2025-12-02 17:44:39.909729,WARNING,order-service,Disk space low,10.0.68.20,471,,0
+2025-12-02 17:44:38.909729,ERROR,order-service,Disk write failed,10.0.70.183,79,,0
+2025-12-02 17:44:40.909729,INFO,web-server,Request processed successfully,10.0.149.185,170,corr_7797,0
+2025-12-02 17:44:40.909729,INFO,cache,Service started,10.0.99.229,219,corr_2406,0
+2025-12-02 17:44:47.909729,INFO,waf,Request processed successfully,10.0.22.237,250,,0
+2025-12-02 17:44:44.909729,INFO,order-service,Configuration loaded,10.0.58.169,365,,0
+2025-12-02 17:44:50.909729,INFO,order-service,Service started,10.0.171.96,261,corr_3743,0
+2025-12-02 17:44:50.909729,WARNING,load-balancer,High response time detected,10.0.53.207,4135,,0
+2025-12-02 17:44:50.909729,ERROR,waf,Network unreachable,10.0.139.251,3817,,0
+2025-12-02 17:44:56.909729,INFO,web-server,Database connection established,10.0.41.23,45,,0
+2025-12-02 17:44:54.909729,WARNING,waf,CPU temperature high,10.0.244.145,3394,,0
+2025-12-02 17:45:01.909729,CRITICAL,firewall,Hardware failure,10.0.59.108,357,,0
+2025-12-02 17:45:03.909729,CRITICAL,web-server,Hardware failure,10.0.74.58,262,,0
+2025-12-02 17:45:02.909729,WARNING,inventory-service,Unusual traffic pattern,10.0.73.239,3824,corr_1157,0
+2025-12-02 17:45:04.909729,INFO,order-service,Database connection established,10.0.54.191,123,corr_6861,0
+2025-12-02 17:45:09.909729,INFO,notification-service,Database connection established,10.0.97.39,230,corr_4380,0
+2025-12-02 17:45:09.909729,INFO,monitoring-service,Backup completed,10.0.74.181,96,,0
+2025-12-02 17:45:09.909729,INFO,web-server,Health check passed,10.0.14.224,40,,0
+2025-12-02 17:45:13.909729,CRITICAL,ids,Emergency shutdown required,10.0.193.221,109,,0
+2025-12-02 17:45:12.909729,INFO,web-server,Database connection established,10.0.82.200,365,,0
+2025-12-02 17:45:19.909729,WARNING,auth-service,Connection pool at 80%,10.0.251.148,3214,,0
+2025-12-02 17:45:17.909729,CRITICAL,payment-service,System crash imminent,10.0.164.164,168,,0
+2025-12-02 17:45:22.909729,WARNING,database,SSL certificate expiring soon,10.0.49.133,469,,0
+2025-12-02 17:45:24.909729,INFO,database,Configuration loaded,10.0.131.43,498,,0
+2025-12-02 17:45:24.909729,INFO,payment-service,Request processed successfully,10.0.78.14,399,,0
+2025-12-02 17:45:24.909729,INFO,load-balancer,Configuration loaded,10.0.10.44,431,,0
+2025-12-02 17:45:30.909729,INFO,inventory-service,Health check passed,10.0.193.117,340,corr_4898,0
+2025-12-02 17:45:31.909729,WARNING,api-gateway,High response time detected,10.0.212.105,3935,,0
+2025-12-02 17:45:33.909729,ERROR,web-server,Payment processing failed,10.0.79.157,2866,,0
+2025-12-02 17:45:34.909729,INFO,firewall,Request processed successfully,10.0.68.35,179,,0
+2025-12-02 17:45:35.909729,INFO,api-gateway,Data synchronized,10.0.1.204,480,corr_5719,0
+2025-12-02 17:45:41.909729,CRITICAL,database,Emergency shutdown required,10.0.154.36,194,corr_7051,0
+2025-12-02 17:45:41.909729,INFO,cache,Database connection established,10.0.191.186,63,,0
+2025-12-02 17:45:44.909729,ERROR,user-service,Permission denied,10.0.119.107,2618,,0
+2025-12-02 17:45:46.909729,WARNING,notification-service,High response time detected,10.0.153.33,2417,,0
+2025-12-02 17:45:46.909729,WARNING,api-gateway,High response time detected,10.0.44.253,4240,,0
+2025-12-02 17:45:48.909729,WARNING,user-service,Network latency increased,10.0.154.244,4820,corr_1116,0
+2025-12-02 17:45:51.909729,INFO,monitoring-service,Cache hit,10.0.111.179,432,corr_9928,0
+2025-12-02 17:45:54.909729,WARNING,payment-service,High response time detected,10.0.239.92,1700,,0
+2025-12-02 17:45:55.909729,ERROR,auth-service,Database connection lost,10.0.141.133,4669,corr_6009,0
+2025-12-02 17:45:58.909729,INFO,load-balancer,Database connection established,10.0.22.180,270,,0
+2025-12-02 17:45:57.909729,INFO,auth-service,Email sent successfully,10.0.128.201,335,,0
+2025-12-02 17:45:58.909729,INFO,auth-service,Health check passed,10.0.233.48,409,,0
+2025-12-02 17:46:02.909729,WARNING,order-service,Cache miss rate high,10.0.10.13,721,corr_1601,0
+2025-12-02 17:46:07.909729,WARNING,payment-service,CPU temperature high,10.0.197.100,288,,0
+2025-12-02 17:46:08.909729,WARNING,inventory-service,Memory usage above threshold,10.0.107.98,2003,,0
+2025-12-02 17:46:11.909729,WARNING,ids,Cache miss rate high,10.0.202.167,551,corr_7886,0
+2025-12-02 17:46:12.909729,WARNING,ids,Cache miss rate high,10.0.45.207,4966,,0
+2025-12-02 17:46:15.909729,WARNING,user-service,Memory usage above threshold,10.0.208.115,543,corr_1536,0
+2025-12-02 17:46:17.909729,INFO,order-service,User login successful,10.0.23.70,480,,0
+2025-12-02 17:46:18.909729,ERROR,database,Permission denied,10.0.103.100,4317,,0
+2025-12-02 17:46:18.909729,WARNING,auth-service,High response time detected,10.0.84.106,1000,,0
+2025-12-02 17:46:21.909729,ERROR,monitoring-service,API rate limit exceeded,10.0.16.161,2070,,0
+2025-12-02 17:46:21.909729,ERROR,order-service,Database connection lost,10.0.15.198,2064,corr_9205,0
+2025-12-02 17:46:27.909729,WARNING,firewall,Memory usage above threshold,10.0.145.246,4430,,0
+2025-12-02 17:46:24.909729,INFO,user-service,Data synchronized,10.0.144.16,281,,0
+2025-12-02 17:46:31.909729,ERROR,web-server,Permission denied,10.0.11.99,519,,0
+2025-12-02 17:46:30.909729,WARNING,web-server,CPU temperature high,10.0.255.149,3336,corr_5815,0
+2025-12-02 17:46:30.909729,ERROR,user-service,Database connection lost,10.0.95.185,3865,corr_1988,0
+2025-12-02 17:46:36.909729,CRITICAL,ids,Data loss detected,10.0.94.156,356,,0
+2025-12-02 17:46:36.909729,ERROR,monitoring-service,File not found,10.0.166.73,861,corr_2805,0
+2025-12-02 17:46:40.909729,INFO,auth-service,Cache hit,10.0.98.46,267,,0
+2025-12-02 17:46:40.909729,INFO,waf,Backup completed,10.0.184.147,435,,0
+2025-12-02 17:46:42.909729,WARNING,load-balancer,Unusual traffic pattern,10.0.226.46,1884,corr_6305,0
+2025-12-02 17:46:42.909729,ERROR,cache,Disk write failed,10.0.177.58,1068,,0
+2025-12-02 17:46:47.909729,WARNING,firewall,CPU temperature high,10.0.209.145,1329,,0
+2025-12-02 17:46:49.909729,WARNING,api-gateway,Connection pool at 80%,10.0.153.114,2842,corr_1480,0
+2025-12-02 17:46:49.909729,INFO,inventory-service,Database connection established,10.0.202.99,15,,0
+2025-12-02 17:46:53.909729,INFO,database,Request processed successfully,10.0.149.96,41,,0
+2025-12-02 17:46:57.909729,INFO,web-server,Service started,10.0.44.7,153,corr_8466,0
+2025-12-02 17:46:59.909729,INFO,firewall,Configuration loaded,10.0.188.236,479,corr_9352,0
+2025-12-02 17:46:56.909729,INFO,user-service,Request processed successfully,10.0.16.73,468,,0
+2025-12-02 17:47:01.909729,INFO,cache,Backup completed,10.0.245.199,337,corr_5433,0
+2025-12-02 17:47:03.909729,ERROR,firewall,File not found,10.0.214.181,3773,corr_2472,0
+2025-12-02 17:47:03.909729,WARNING,notification-service,CPU temperature high,10.0.41.67,4281,,0
+2025-12-02 17:47:07.909729,INFO,database,Configuration loaded,10.0.34.249,119,,0
+2025-12-02 17:47:07.909729,WARNING,user-service,Disk space low,10.0.32.185,873,,0
+2025-12-02 17:47:11.909729,DEBUG,cache,API call to external service,10.0.121.88,325,,0
+2025-12-02 17:47:12.909729,CRITICAL,notification-service,System crash imminent,10.0.64.183,382,,0
+2025-12-02 17:47:13.909729,INFO,waf,Data synchronized,10.0.131.17,174,,0
+2025-12-02 17:47:18.909729,INFO,inventory-service,Backup completed,10.0.9.148,467,,0
+2025-12-02 17:47:17.909729,INFO,cache,Backup completed,10.0.6.148,74,,0
+2025-12-02 17:47:19.909729,WARNING,database,Disk space low,10.0.23.143,810,,0
+2025-12-02 17:47:22.909729,INFO,inventory-service,Backup completed,10.0.227.195,436,,0
+2025-12-02 17:47:23.909729,INFO,web-server,Request processed successfully,10.0.171.91,191,,0
+2025-12-02 17:47:28.909729,WARNING,monitoring-service,Slow query detected,10.0.25.253,2815,corr_7125,0
+2025-12-02 17:47:28.909729,INFO,auth-service,Data synchronized,10.0.117.177,85,,0
+2025-12-02 17:47:31.909729,INFO,auth-service,Request processed successfully,10.0.115.208,480,corr_3611,0
+2025-12-02 17:47:33.909729,ERROR,firewall,API rate limit exceeded,10.0.35.148,2005,,0
+2025-12-02 17:47:36.909729,ERROR,auth-service,Network unreachable,10.0.1.42,4817,corr_8703,0
+2025-12-02 17:47:39.909729,ERROR,payment-service,Network unreachable,10.0.48.24,3109,corr_9010,0
+2025-12-02 17:47:41.909729,ERROR,cache,File not found,10.0.199.39,1269,,0
+2025-12-02 17:47:42.909729,WARNING,ids,Network latency increased,10.0.79.225,902,,0
+2025-12-02 17:47:42.909729,DEBUG,ids,Cache key: user_profile_789,10.0.207.102,440,corr_9613,0
+2025-12-02 17:47:47.909729,DEBUG,firewall,SQL query executed,10.0.2.40,237,corr_1199,0
+2025-12-02 17:47:47.909729,INFO,ids,Health check passed,10.0.107.85,305,,0
+2025-12-02 17:47:47.909729,INFO,inventory-service,Email sent successfully,10.0.159.7,360,corr_7270,0
+2025-12-02 17:47:48.909729,INFO,database,Service started,10.0.2.220,367,corr_1610,0
+2025-12-02 17:47:55.909729,WARNING,ids,Disk space low,10.0.95.138,4450,,0
+2025-12-02 17:47:57.909729,WARNING,api-gateway,Memory usage above threshold,10.0.104.74,3792,corr_3697,0
+2025-12-02 17:47:59.909729,WARNING,user-service,Network latency increased,10.0.78.73,2263,,0
+2025-12-02 17:48:00.909729,WARNING,user-service,High response time detected,10.0.43.7,685,,0
+2025-12-02 17:48:02.909729,DEBUG,web-server,SQL query executed,10.0.35.185,85,corr_3560,0
+2025-12-02 17:48:04.909729,INFO,web-server,Data synchronized,10.0.191.186,349,,0
+2025-12-02 17:48:05.909729,WARNING,payment-service,Network latency increased,10.0.28.93,4967,,0
+2025-12-02 17:48:04.909729,INFO,notification-service,Cache hit,10.0.36.179,185,,0
+2025-12-02 17:48:09.909729,WARNING,inventory-service,Unusual traffic pattern,10.0.172.168,874,,0
+2025-12-02 17:48:13.909729,INFO,user-service,Request processed successfully,10.0.170.121,482,,0
+2025-12-02 17:48:13.909729,ERROR,waf,Out of memory,10.0.233.49,2829,,0
+2025-12-02 17:48:17.909729,INFO,ids,Data synchronized,10.0.82.167,114,corr_7459,0
+2025-12-02 17:48:15.909729,INFO,cache,Health check passed,10.0.94.239,436,corr_4054,0
+2025-12-02 17:48:21.909729,ERROR,payment-service,Permission denied,10.0.56.222,775,corr_3571,0
+2025-12-02 17:48:21.909729,WARNING,web-server,High response time detected,10.0.216.172,3512,,0
+2025-12-02 17:48:24.909729,ERROR,user-service,Out of memory,10.0.94.59,1939,,0
+2025-12-02 17:48:23.909729,INFO,notification-service,Backup completed,10.0.242.16,266,,0
+2025-12-02 17:48:24.909729,INFO,load-balancer,User login successful,10.0.60.90,163,corr_9723,0
+2025-12-02 17:48:31.909729,WARNING,payment-service,SSL certificate expiring soon,10.0.14.119,3589,,0
+2025-12-02 17:48:31.909729,INFO,database,Request processed successfully,10.0.74.253,149,,0
+2025-12-02 17:48:31.909729,WARNING,inventory-service,Connection pool at 80%,10.0.13.89,1358,,0
+2025-12-02 17:48:35.909729,INFO,inventory-service,Health check passed,10.0.228.118,108,corr_3467,0
+2025-12-02 17:48:38.909729,INFO,ids,Backup completed,10.0.18.125,144,corr_7269,0
+2025-12-02 17:48:39.909729,WARNING,order-service,Memory usage above threshold,10.0.177.232,3701,corr_5178,0
+2025-12-02 17:48:41.909729,WARNING,order-service,Disk space low,10.0.55.242,3634,,0
+2025-12-02 17:48:40.909729,ERROR,auth-service,Payment processing failed,10.0.189.39,3534,,0
+2025-12-02 17:48:43.909729,ERROR,api-gateway,API rate limit exceeded,10.0.16.251,3078,,0
+2025-12-02 17:48:44.909729,WARNING,user-service,Connection pool at 80%,10.0.205.185,1460,,0
+2025-12-02 17:48:49.909729,DEBUG,web-server,Parsing JSON response,10.0.213.72,342,corr_3423,0
+2025-12-02 17:48:51.909729,WARNING,waf,CPU temperature high,10.0.92.149,1992,,0
+2025-12-02 17:48:50.909729,ERROR,database,File not found,10.0.64.14,4890,corr_3018,0
+2025-12-02 17:48:52.909729,ERROR,firewall,Network unreachable,10.0.38.52,4224,,0
+2025-12-02 17:48:54.909729,WARNING,waf,Connection pool at 80%,10.0.123.86,3780,,0
+2025-12-02 17:48:56.909729,ERROR,user-service,File not found,10.0.177.55,4622,,0
+2025-12-02 17:49:00.909729,WARNING,notification-service,Slow query detected,10.0.81.225,2696,,0
+2025-12-02 17:49:04.909729,DEBUG,payment-service,Processing request ID 12345,10.0.27.164,306,,0
+2025-12-02 17:49:03.909729,INFO,ids,Backup completed,10.0.82.224,265,,0
+2025-12-02 17:49:06.909729,ERROR,cache,Disk write failed,10.0.27.254,4580,,0
+2025-12-02 17:49:09.909729,DEBUG,order-service,API call to external service,10.0.171.77,141,,0
+2025-12-02 17:49:12.909729,DEBUG,inventory-service,Cache key: user_profile_789,10.0.31.41,12,,0
+2025-12-02 17:49:12.909729,WARNING,user-service,Unusual traffic pattern,10.0.219.23,1903,corr_3818,0
+2025-12-02 17:49:16.909729,ERROR,notification-service,API rate limit exceeded,10.0.196.166,1010,,0
+2025-12-02 17:49:18.909729,ERROR,user-service,Out of memory,10.0.147.25,658,,0
+2025-12-02 17:49:20.909729,WARNING,database,Cache miss rate high,10.0.146.64,2059,,0
+2025-12-02 17:49:18.909729,WARNING,payment-service,SSL certificate expiring soon,10.0.48.34,3513,,0
+2025-12-02 17:49:24.909729,WARNING,database,Memory usage above threshold,10.0.119.235,4585,,0
+2025-12-02 17:49:24.909729,INFO,order-service,Configuration loaded,10.0.46.151,132,,0
+2025-12-02 17:49:24.909729,INFO,cache,Data synchronized,10.0.30.46,357,,0
+2025-12-02 17:49:27.909729,WARNING,cache,SSL certificate expiring soon,10.0.200.23,3344,,0
+2025-12-02 17:49:33.909729,ERROR,monitoring-service,Disk write failed,10.0.117.155,3824,,0
+2025-12-02 17:49:31.909729,WARNING,payment-service,SSL certificate expiring soon,10.0.1.133,2003,,0
+2025-12-02 17:49:36.909729,DEBUG,inventory-service,Cache key: user_profile_789,10.0.247.41,446,corr_3012,0
+2025-12-02 17:49:38.909729,WARNING,order-service,SSL certificate expiring soon,10.0.69.63,3308,,0
+2025-12-02 17:49:36.909729,WARNING,order-service,Network latency increased,10.0.233.77,747,,0
+2025-12-02 17:49:38.909729,INFO,auth-service,Service started,10.0.153.83,347,,0
+2025-12-02 17:49:40.909729,WARNING,firewall,Cache miss rate high,10.0.60.171,160,corr_7402,0
+2025-12-02 17:49:42.909729,CRITICAL,ids,System crash imminent,10.0.35.78,382,,0
+2025-12-02 17:49:45.909729,INFO,web-server,Request processed successfully,10.0.126.209,434,,0
+2025-12-02 17:49:47.909729,ERROR,payment-service,Network unreachable,10.0.96.52,2561,corr_9212,0
+2025-12-02 17:49:51.909729,CRITICAL,web-server,Complete system failure,10.0.2.225,200,,0
+2025-12-02 17:49:53.909729,INFO,user-service,Request processed successfully,10.0.185.165,496,corr_2070,0
+2025-12-02 17:49:54.909729,ERROR,database,Permission denied,10.0.246.80,1705,corr_3247,0
+2025-12-02 17:49:56.909729,ERROR,monitoring-service,Database connection lost,10.0.119.13,3854,,0
+2025-12-02 17:49:57.909729,ERROR,order-service,Permission denied,10.0.184.251,2027,,0
+2025-12-02 17:49:58.909729,DEBUG,database,Logging metric data,10.0.241.237,380,,0
+2025-12-02 17:50:00.909729,INFO,firewall,Backup completed,10.0.42.173,406,corr_6691,0
+2025-12-02 17:50:05.909729,ERROR,ids,Database connection lost,10.0.52.121,4740,,0
+2025-12-02 17:50:06.909729,ERROR,cache,Disk write failed,10.0.18.244,4488,corr_8166,0
+2025-12-02 17:50:11.909729,CRITICAL,inventory-service,Recovery impossible,10.0.232.99,446,,0
+2025-12-02 17:50:11.909729,WARNING,user-service,Connection pool at 80%,10.0.234.91,1622,,0
+2025-12-02 17:50:10.909729,INFO,web-server,Database connection established,10.0.158.185,194,,0
+2025-12-02 17:50:17.909729,WARNING,api-gateway,SSL certificate expiring soon,10.0.107.128,3425,corr_6037,0
+2025-12-02 17:50:18.909729,CRITICAL,load-balancer,Critical vulnerability,10.0.107.27,336,,0
+2025-12-02 17:50:20.909729,WARNING,user-service,Connection pool at 80%,10.0.201.106,705,,0
+2025-12-02 17:50:22.909729,INFO,ids,Service started,10.0.74.222,444,,0
+2025-12-02 17:50:22.909729,WARNING,load-balancer,Disk space low,10.0.169.194,932,corr_3233,0
+2025-12-02 17:50:22.909729,INFO,user-service,Configuration loaded,10.0.221.183,44,corr_4337,0
+2025-12-02 17:50:28.909729,DEBUG,database,Cleaning temporary files,10.0.68.158,381,,0
+2025-12-02 17:50:28.909729,ERROR,user-service,Out of memory,10.0.95.227,3006,corr_7829,0
+2025-12-02 17:50:28.909729,INFO,api-gateway,Database connection established,10.0.145.147,20,,0
+2025-12-02 17:50:31.909729,INFO,waf,Database connection established,10.0.191.8,367,,0
+2025-12-02 17:50:35.909729,INFO,ids,Service started,10.0.170.66,147,corr_7918,0
+2025-12-02 17:50:39.909729,ERROR,load-balancer,Database connection lost,10.0.202.24,1419,,0
+2025-12-02 17:50:41.909729,INFO,waf,Request processed successfully,10.0.170.52,473,corr_8977,0
+2025-12-02 17:50:42.909729,WARNING,inventory-service,Unusual traffic pattern,10.0.91.67,774,,0
+2025-12-02 17:50:41.909729,INFO,payment-service,Backup completed,10.0.84.251,142,,0
+2025-12-02 17:50:47.909729,ERROR,api-gateway,Database connection lost,10.0.58.120,4162,,0
+2025-12-02 17:50:47.909729,ERROR,monitoring-service,Authentication failed,10.0.37.187,1400,,0
+2025-12-02 17:50:51.909729,INFO,load-balancer,Data synchronized,10.0.135.85,397,,0
+2025-12-02 17:50:51.909729,INFO,auth-service,Request processed successfully,10.0.158.228,411,,0
+2025-12-02 17:50:51.909729,WARNING,cache,Disk space low,10.0.161.132,1849,,0
+2025-12-02 17:50:53.909729,CRITICAL,monitoring-service,Data loss detected,10.0.24.168,383,,0
+2025-12-02 17:50:56.909729,INFO,firewall,Email sent successfully,10.0.0.243,222,,0
+2025-12-02 17:50:56.909729,WARNING,database,CPU temperature high,10.0.51.182,4247,,0
+2025-12-02 17:51:02.909729,WARNING,database,Memory usage above threshold,10.0.108.194,1441,,0
+2025-12-02 17:51:05.909729,INFO,api-gateway,User login successful,10.0.156.145,182,,0
+2025-12-02 17:51:03.909729,WARNING,web-server,High response time detected,10.0.248.111,669,,0
+2025-12-02 17:51:08.909729,WARNING,ids,Memory usage above threshold,10.0.177.245,2790,,0
+2025-12-02 17:51:11.909729,CRITICAL,web-server,Service outage,10.0.198.188,123,,0
+2025-12-02 17:51:10.909729,WARNING,cache,Cache miss rate high,10.0.3.85,161,,0
+2025-12-02 17:51:10.909729,ERROR,waf,Payment processing failed,10.0.1.64,2615,,0
+2025-12-02 17:51:16.909729,WARNING,inventory-service,Memory usage above threshold,10.0.156.89,781,,0
+2025-12-02 17:51:15.909729,INFO,payment-service,User login successful,10.0.114.14,262,,0
+2025-12-02 17:51:18.909729,CRITICAL,inventory-service,Data loss detected,10.0.84.234,106,,0
+2025-12-02 17:51:19.909729,CRITICAL,cache,Data loss detected,10.0.21.195,341,,0
+2025-12-02 17:51:25.909729,INFO,waf,Cache hit,10.0.189.163,14,corr_6901,0
+2025-12-02 17:51:24.909729,WARNING,monitoring-service,CPU temperature high,10.0.221.159,158,,0
+2025-12-02 17:51:24.909729,INFO,api-gateway,Data synchronized,10.0.209.252,361,,0
+2025-12-02 17:51:29.909729,ERROR,inventory-service,Network unreachable,10.0.78.185,1054,,0
+2025-12-02 17:51:30.909729,INFO,inventory-service,User login successful,10.0.96.136,288,corr_1159,0
+2025-12-02 17:51:30.909729,WARNING,cache,Network latency increased,10.0.222.157,3987,corr_2803,0
+2025-12-02 17:51:33.909729,WARNING,auth-service,CPU temperature high,10.0.153.244,3736,,0
+2025-12-02 17:51:39.909729,INFO,order-service,Email sent successfully,10.0.243.233,215,,0
+2025-12-02 17:51:39.909729,ERROR,firewall,API rate limit exceeded,10.0.1.124,3980,,0
+2025-12-02 17:51:41.909729,ERROR,api-gateway,Out of memory,10.0.88.103,3480,,0
+2025-12-02 17:51:40.909729,ERROR,notification-service,Database connection lost,10.0.249.45,4891,,0
+2025-12-02 17:51:44.909729,INFO,load-balancer,Configuration loaded,10.0.143.233,401,,0
+2025-12-02 17:51:48.909729,INFO,database,Service started,10.0.254.129,500,corr_4211,0
+2025-12-02 17:51:47.909729,ERROR,inventory-service,Payment processing failed,10.0.31.110,1999,,0
+2025-12-02 17:51:50.909729,WARNING,notification-service,CPU temperature high,10.0.204.231,3908,,0
+2025-12-02 17:51:53.909729,INFO,monitoring-service,Health check passed,10.0.51.32,77,,0
+2025-12-02 17:51:56.909729,WARNING,load-balancer,Cache miss rate high,10.0.49.194,515,corr_4431,0
+2025-12-02 17:51:58.909729,INFO,monitoring-service,User login successful,10.0.54.104,59,corr_4702,0
+2025-12-02 17:51:59.909729,INFO,order-service,Service started,10.0.242.148,104,,0
+2025-12-02 17:52:03.909729,INFO,monitoring-service,Health check passed,10.0.163.57,272,,0
+2025-12-02 17:52:01.909729,INFO,notification-service,Data synchronized,10.0.238.189,462,,0
+2025-12-02 17:52:03.909729,INFO,waf,Health check passed,10.0.206.206,331,,0
+2025-12-02 17:52:06.909729,INFO,ids,Health check passed,10.0.221.114,105,,0
+2025-12-02 17:52:07.909729,INFO,ids,Service started,10.0.38.226,255,,0
+2025-12-02 17:52:12.909729,WARNING,api-gateway,CPU temperature high,10.0.86.75,4449,,0
+2025-12-02 17:52:12.909729,INFO,firewall,Database connection established,10.0.106.163,139,corr_1912,0
+2025-12-02 17:52:14.909729,INFO,inventory-service,Configuration loaded,10.0.99.74,329,corr_6547,0
+2025-12-02 17:52:19.909729,DEBUG,notification-service,Cleaning temporary files,10.0.211.253,469,corr_4760,0
+2025-12-02 17:52:20.909729,CRITICAL,cache,Data loss detected,10.0.155.120,109,,0
+2025-12-02 17:52:22.909729,WARNING,notification-service,Disk space low,10.0.97.140,1787,corr_7052,0
+2025-12-02 17:52:20.909729,CRITICAL,notification-service,Service outage,10.0.221.97,177,,0
+2025-12-02 17:52:24.909729,INFO,waf,Health check passed,10.0.176.80,238,,0
+2025-12-02 17:52:24.909729,WARNING,user-service,Slow query detected,10.0.32.113,2862,,0
+2025-12-02 17:52:27.909729,INFO,load-balancer,Health check passed,10.0.130.177,245,,0
+2025-12-02 17:52:29.909729,INFO,inventory-service,Cache hit,10.0.53.41,186,corr_8159,0
+2025-12-02 17:52:32.909729,INFO,load-balancer,Backup completed,10.0.248.102,447,,0
+2025-12-02 17:52:37.909729,INFO,notification-service,Data synchronized,10.0.40.105,209,corr_3628,0
+2025-12-02 17:52:37.909729,INFO,notification-service,Request processed successfully,10.0.177.6,152,corr_3389,0
+2025-12-02 17:52:39.909729,CRITICAL,inventory-service,Complete system failure,10.0.121.176,193,,0
+2025-12-02 17:52:43.909729,INFO,order-service,Request processed successfully,10.0.170.252,288,,0
+2025-12-02 17:52:42.909729,WARNING,firewall,Disk space low,10.0.9.114,4704,,0
+2025-12-02 17:52:44.909729,WARNING,waf,Network latency increased,10.0.239.213,225,,0
+2025-12-02 17:52:47.909729,WARNING,order-service,Slow query detected,10.0.145.246,380,,0
+2025-12-02 17:52:46.909729,ERROR,database,API rate limit exceeded,10.0.174.103,69,,0
+2025-12-02 17:52:48.909729,INFO,web-server,Data synchronized,10.0.105.165,366,,0
+2025-12-02 17:52:52.909729,INFO,user-service,Request processed successfully,10.0.10.3,208,corr_2816,0
+2025-12-02 17:52:56.909729,ERROR,user-service,Authentication failed,10.0.184.134,521,corr_1525,0
+2025-12-02 17:52:58.909729,INFO,order-service,Backup completed,10.0.201.17,495,,0
+2025-12-02 17:53:00.909729,ERROR,ids,Service timeout,10.0.223.250,221,,0
+2025-12-02 17:53:03.909729,INFO,firewall,Service started,10.0.203.252,383,,0
+2025-12-02 17:53:03.909729,INFO,monitoring-service,Configuration loaded,10.0.73.37,136,corr_4902,0
+2025-12-02 17:53:06.909729,INFO,web-server,Cache hit,10.0.148.47,287,,0
+2025-12-02 17:53:04.909729,CRITICAL,waf,Critical vulnerability,10.0.92.42,199,,0
+2025-12-02 17:53:09.909729,INFO,load-balancer,Database connection established,10.0.177.28,210,,0
+2025-12-02 17:53:10.909729,WARNING,order-service,Connection pool at 80%,10.0.158.179,515,,0
+2025-12-02 17:53:12.909729,WARNING,load-balancer,Slow query detected,10.0.244.176,3300,,0
+2025-12-02 17:53:16.909729,INFO,order-service,Data synchronized,10.0.177.74,272,corr_5285,0
+2025-12-02 17:53:18.909729,INFO,payment-service,Cache hit,10.0.163.15,419,,0
+2025-12-02 17:53:19.909729,WARNING,notification-service,Unusual traffic pattern,10.0.58.18,3860,,0
+2025-12-02 17:53:20.909729,INFO,cache,Backup completed,10.0.67.158,199,corr_8446,0
+2025-12-02 17:53:20.909729,INFO,firewall,Backup completed,10.0.175.104,244,,0
+2025-12-02 17:53:25.909729,WARNING,api-gateway,SSL certificate expiring soon,10.0.58.119,4497,,0
+2025-12-02 17:53:24.909729,INFO,payment-service,Backup completed,10.0.17.210,311,,0
+2025-12-02 17:53:27.909729,CRITICAL,monitoring-service,Service outage,10.0.61.128,229,corr_4891,0
+2025-12-02 17:53:33.909729,ERROR,load-balancer,Authentication failed,10.0.198.85,878,,0
+2025-12-02 17:53:31.909729,INFO,user-service,User login successful,10.0.48.161,340,,0
+2025-12-02 17:53:36.909729,INFO,order-service,Database connection established,10.0.131.204,353,corr_8328,0
+2025-12-02 17:53:36.909729,INFO,api-gateway,Service started,10.0.14.2,324,,0
+2025-12-02 17:53:41.909729,ERROR,database,Network unreachable,10.0.209.245,1527,corr_2569,0
+2025-12-02 17:53:39.909729,ERROR,monitoring-service,Service timeout,10.0.143.111,3838,,0
+2025-12-02 17:53:40.909729,INFO,auth-service,Health check passed,10.0.188.114,481,,0
+2025-12-02 17:53:47.909729,INFO,ids,Configuration loaded,10.0.22.13,324,corr_5871,0
+2025-12-02 17:53:46.909729,ERROR,database,Authentication failed,10.0.251.168,262,corr_5944,0
+2025-12-02 17:53:47.909729,WARNING,api-gateway,Network latency increased,10.0.73.25,4184,,0
+2025-12-02 17:53:48.909729,WARNING,load-balancer,Connection pool at 80%,10.0.114.217,1032,,0
+2025-12-02 17:53:52.909729,WARNING,cache,SSL certificate expiring soon,10.0.7.171,4651,,0
+2025-12-02 17:53:56.909729,CRITICAL,web-server,Data corruption detected,10.0.98.193,231,corr_9566,0
+2025-12-02 17:53:55.909729,CRITICAL,waf,Emergency shutdown required,10.0.13.29,176,corr_6078,0
+2025-12-02 17:54:00.909729,INFO,load-balancer,Email sent successfully,10.0.10.224,440,corr_5869,0
+2025-12-02 17:54:00.909729,WARNING,database,Memory usage above threshold,10.0.23.69,4244,,0
+2025-12-02 17:54:04.909729,INFO,cache,Data synchronized,10.0.28.48,195,,0
+2025-12-02 17:54:02.909729,WARNING,waf,SSL certificate expiring soon,10.0.28.90,4930,,0
+2025-12-02 17:54:07.909729,INFO,user-service,Backup completed,10.0.188.79,14,corr_8000,0
+2025-12-02 17:54:09.909729,DEBUG,firewall,Cleaning temporary files,10.0.34.102,474,corr_1707,0
+2025-12-02 17:54:11.909729,ERROR,monitoring-service,Service timeout,10.0.115.28,4289,corr_3132,0
+2025-12-02 17:54:13.909729,WARNING,monitoring-service,Memory usage above threshold,10.0.91.22,1793,,0
+2025-12-02 17:54:16.909729,CRITICAL,load-balancer,Critical vulnerability,10.0.250.154,499,,0
+2025-12-02 17:54:17.909729,WARNING,database,High response time detected,10.0.55.132,3450,corr_1593,0
+2025-12-02 17:54:20.909729,CRITICAL,web-server,Emergency shutdown required,10.0.6.193,11,,0
+2025-12-02 17:54:22.909729,CRITICAL,notification-service,Service outage,10.0.61.152,464,,0
+2025-12-02 17:54:25.909729,INFO,waf,Email sent successfully,10.0.60.110,70,corr_3153,0
+2025-12-02 17:54:25.909729,INFO,waf,Email sent successfully,10.0.149.163,47,corr_2082,0
+2025-12-02 17:54:29.909729,INFO,order-service,Configuration loaded,10.0.98.56,495,corr_1068,0
+2025-12-02 17:54:26.909729,INFO,api-gateway,Database connection established,10.0.153.96,312,,0
+2025-12-02 17:54:31.909729,INFO,auth-service,Health check passed,10.0.193.249,102,,0

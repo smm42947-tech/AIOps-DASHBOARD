@@ -1,0 +1,21 @@
+
+=== AIOps Test Logs Summary ===
+Generated: 2025-12-02 19:21:10.974755
+Total Records: 1000
+Time Range: 2025-12-02 17:21:14.909729 to 2025-12-02 17:54:31.909729
+Anomaly Periods: 5 clusters
+Services: 16 unique services
+Correlation IDs: 287 unique correlations
+
+Anomaly Pattern:
+- Period 1: Records 30-40 (System stress)
+- Period 2: Records 80-90 (Memory leak)
+- Period 3: Records 150-160 (Network issues)
+- Period 4: Records 220-230 (Database problems)
+- Period 5: Records 300-310 (Cascade failure)
+
+Use these logs to test:
+1. Anomaly detection in dashboard
+2. Log filtering and searching
+3. Correlation analysis
+4. Pattern recognition

@@ -1,0 +1,25 @@
+timestamp,level,service,message,source_ip,response_time_ms
+2024-01-15 10:00:00,INFO,auth-service,User login successful,192.168.1.100,45
+2024-01-15 10:00:05,WARNING,database,Slow query detected: 1200ms,10.0.0.5,1200
+2024-01-15 10:00:10,ERROR,auth-service,Authentication failed: Invalid credentials,192.168.1.150,80
+2024-01-15 10:00:15,INFO,api-gateway,Request processed successfully,10.0.0.10,35
+2024-01-15 10:00:20,CRITICAL,system,CPU usage spiked to 95%,localhost,0
+2024-01-15 10:00:25,DEBUG,cache,Cache miss for key:user_123,192.168.1.200,5
+2024-01-15 10:01:30,ERROR,web-server,Connection timeout to database,192.168.1.101,5000
+2024-01-15 10:02:00,WARNING,load-balancer,Backend server 3 high latency,10.0.0.15,450
+2024-01-15 10:02:30,INFO,database,Query executed successfully,10.0.0.5,120
+2024-01-15 10:03:00,CRITICAL,system,MEMORY usage at 98% - possible leak,localhost,0
+2024-01-15 10:03:30,ERROR,auth-service,LDAP connection failed,192.168.1.150,3000
+2024-01-15 10:04:00,WARNING,cache,Redis connection slow,192.168.1.200,250
+2024-01-15 10:04:30,INFO,api-gateway,1000 requests processed,10.0.0.10,30
+2024-01-15 10:05:00,ERROR,database,Deadlock detected - transaction rolled back,10.0.0.5,2000
+2024-01-15 10:05:30,CRITICAL,system,DISK I/O at 100% - storage bottleneck,localhost,0
+2024-01-15 10:06:00,WARNING,web-server,High response time: 800ms,192.168.1.101,800
+2024-01-15 10:06:30,INFO,load-balancer,Traffic increased by 300%,10.0.0.15,40
+2024-01-15 10:07:00,ERROR,auth-service,Rate limit exceeded for IP 203.0.113.25,192.168.1.150,100
+2024-01-15 10:07:30,WARNING,database,Table space nearly full,10.0.0.5,0
+2024-01-15 10:08:00,CRITICAL,system,NETWORK packet loss 15%,localhost,0
+2024-01-15 10:08:30,INFO,cache,Cache hit ratio dropped to 60%,192.168.1.200,10
+2024-01-15 10:09:00,ERROR,api-gateway,Circuit breaker opened for auth-service,10.0.0.10,1000
+2024-01-15 10:09:30,WARNING,web-server,Thread pool at 90% capacity,192.168.1.101,0
+2024-01-15 10:10:00,INFO,load-balancer,Health check failed for backend 2,10.0.0.15,50

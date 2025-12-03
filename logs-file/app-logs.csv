@@ -1,0 +1,21 @@
+timestamp,level,service,message,source_ip,user_id,request_id
+2024-01-15 10:15:00,INFO,user-service,User profile updated,10.0.1.10,user_456,req_001
+2024-01-15 10:15:30,WARNING,payment-service,Payment processing slow: 3.2s,10.0.1.20,user_789,req_002
+2024-01-15 10:16:00,ERROR,order-service,Inventory check failed: item out of stock,10.0.1.30,user_123,req_003
+2024-01-15 10:16:30,INFO,notification-service,Email sent successfully,10.0.1.40,user_456,req_004
+2024-01-15 10:17:00,CRITICAL,payment-service,Payment gateway timeout,10.0.1.20,user_789,req_005
+2024-01-15 10:17:30,DEBUG,user-service,Password validation passed,10.0.1.10,user_123,req_006
+2024-01-15 10:18:00,ERROR,order-service,Shipping address validation failed,10.0.1.30,user_456,req_007
+2024-01-15 10:18:30,WARNING,inventory-service,Stock level below threshold,10.0.1.50,user_789,req_008
+2024-01-15 10:19:00,INFO,notification-service,SMS delivered,10.0.1.40,user_123,req_009
+2024-01-15 10:19:30,CRITICAL,payment-service,Fraud detection triggered,10.0.1.20,user_456,req_010
+2024-01-15 10:20:00,ERROR,user-service,Account locked after 5 failed attempts,10.0.1.10,user_789,req_011
+2024-01-15 10:20:30,WARNING,order-service,Cart abandoned - potential revenue loss,10.0.1.30,user_123,req_012
+2024-01-15 10:21:00,INFO,inventory-service,Restock order placed,10.0.1.50,user_456,req_013
+2024-01-15 10:21:30,ERROR,notification-service,Push notification failed,10.0.1.40,user_789,req_014
+2024-01-15 10:22:00,CRITICAL,payment-service,Database connection lost,10.0.1.20,user_123,req_015
+2024-01-15 10:22:30,WARNING,user-service,Unusual login location detected,10.0.1.10,user_456,req_016
+2024-01-15 10:23:00,INFO,order-service,Order confirmed and shipped,10.0.1.30,user_789,req_017
+2024-01-15 10:23:30,ERROR,inventory-service,Barcode scan failed,10.0.1.50,user_123,req_018
+2024-01-15 10:24:00,WARNING,notification-service,Email bounce rate increased,10.0.1.40,user_456,req_019
+2024-01-15 10:24:30,CRITICAL,payment-service,SSL certificate expired,10.0.1.20,user_789,req_020
